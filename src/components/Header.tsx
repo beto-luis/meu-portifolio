@@ -1,14 +1,20 @@
 import React from "react";
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Spacer, Text, WrapItem } from "@chakra-ui/react";
+import Link from "next/link";
 
 export function Header() {
     return (
-        <Box w="100%" bgGradient="linear(to-t, white, blue.400)" >
-            <Flex p="5" align="center" gap="3">
+        <Box w="100%" bgGradient="linear(to-t, white, blue.400)" flexDirection="row">
+            <Flex p="5" align="center" gap="2">
                 <Heading fontSize={25}>Roberto de Carvalho /</Heading>
                 <Text fontSize={25}>Dev Frontend</Text>
-            </Flex>
-            <Flex>
+                <Spacer />
+                
+                <Link href={""}>Sobre mim</Link>
+                
+                <Link href={""}>Projetos</Link>
+                
+                <Link href={""}>Contato</Link>
                 
             </Flex>
         </Box>
