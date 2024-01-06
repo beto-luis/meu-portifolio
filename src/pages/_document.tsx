@@ -6,7 +6,6 @@ import NextDocument, {
     NextScript,
     DocumentContext,
 } from 'next/document';
-import Link from 'next/link';
 
 import React from 'react';
 
