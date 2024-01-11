@@ -1,20 +1,62 @@
-import React from "react";
-import { Box, Button, Flex, Heading, Spacer, Text, WrapItem } from "@chakra-ui/react";
-import Link from "next/link";
+import {
+    Box,
+    Flex,
+    Button,
+    useColorModeValue,
+    Stack,
+    useColorMode,
+    Heading,
+    Spacer,
+    Text,
+    chakra,
+} from '@chakra-ui/react'
+import { MoonIcon, SunIcon } from '@chakra-ui/icons'
+
+interface Props {
+    children: React.ReactNode
+}
 
 export function Header() {
+    const { colorMode, toggleColorMode } = useColorMode()
     return (
-        <Box w="100%" bgGradient="linear(to-t, white, blue.400)">
-            <Flex direction="row" p="5" align="center" gap="2">
-                <Heading fontSize={25}>Roberto de Carvalho /</Heading>
-                <Text fontSize={25}>Dev Frontend</Text>
-                <Spacer />
-                <Flex gap="5" >
-                    <Link href={""}>Sobre mim</Link>
-                    <Link href={""}>Projetos</Link>
-                    <Link href={""}>Contato</Link>
+        <>
+            <Box bg={useColorModeValue('gray.50', 'gray.900')}
+                color={useColorModeValue('gray.700', 'gray.200')} px={4}>
+                <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
+                    <Flex w="100%" gap="3" p="5" direction="row" align="center" >
+                        <Heading fontSize={25} >Roberto Carvalho /</Heading>
+                        <Text fontSize={25} fontWeight={300}>Dev Frontend</Text>
+                        <Spacer />
+                        <Flex gap="5">
+                            <Button _hover={{
+                                bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+                            }} variant='ghost'>
+                                Sobre mim
+                            </Button>
+                            <Button _hover={{
+                                bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+                            }} variant='ghost'>
+                                Projetos
+                            </Button>
+                            <Button _hover={{
+                                bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+                            }} variant='ghost'>
+                                Contato
+                            </Button>
+                        </Flex>
+                    </Flex>
+
+                    <Flex alignItems={'center'}>
+                        <Stack direction={'row'} spacing={7}>
+                            <Button _hover={{
+                                bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+                            }} onClick={toggleColorMode}>
+                                {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+                            </Button>
+                        </Stack>
+                    </Flex>
                 </Flex>
-            </Flex>
-        </Box>
-    );
+            </Box>
+        </>
+    )
 }
