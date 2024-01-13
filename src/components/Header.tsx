@@ -12,17 +12,14 @@ import {
 } from '@chakra-ui/react'
 import { MoonIcon, SunIcon } from '@chakra-ui/icons'
 
-interface Props {
-    children: React.ReactNode
-}
-
 export function Header() {
     const { colorMode, toggleColorMode } = useColorMode()
     return (
-        <>
-            <Box bg={useColorModeValue('gray.50', 'gray.900')}
+        <>  
+            <Box h={20} w="100%" position={'fixed'} zIndex="1"
+                bg={useColorModeValue('gray.50', 'gray.900')}
                 color={useColorModeValue('gray.700', 'gray.200')} px={4}>
-                <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
+                <Flex alignItems={'center'} justifyContent={'space-between'}>
                     <Flex w="100%" gap="3" p="5" direction="row" align="center" >
                         <Heading fontSize={25} >Roberto Carvalho /</Heading>
                         <Text fontSize={25} fontWeight={300}>Dev Frontend</Text>
