@@ -6,17 +6,53 @@ import {
   Heading,
   Text,
   Button,
-  Image,
-  Icon,
-  IconProps,
   useColorModeValue,
+  Avatar,
+  Center,
+  VisuallyHidden,
+  chakra,
 } from '@chakra-ui/react'
+import { ReactNode } from 'react'
+import { FaGithub, FaLinkedin, FaWhatsapp, } from 'react-icons/fa'
+import { Divider } from '@chakra-ui/react'
+
+const SocialButton = ({
+  children,
+  label,
+  href,
+}: {
+  children: ReactNode
+  label: string
+  href: string
+}) => {
+  return (
+    <chakra.button
+      fontSize={'20'}
+      rounded={'full'}
+      w={8}
+      h={8}
+      cursor={'pointer'}
+      as={'a'}
+      href={href}
+      target="_blank"
+      display={'inline-flex'}
+      alignItems={'center'}
+      justifyContent={'center'}
+      transition={'background 0.3s ease'}
+      _hover={{
+        bg: useColorModeValue('blackAlpha.300', 'green.300'),
+      }}>
+      <VisuallyHidden>{label}</VisuallyHidden>
+      {children}
+    </chakra.button>
+  )
+}
 
 export function SobreMim() {
   return (
     <Container maxW={'100%'}
-    overflow={'hidden'}>
-      <Stack
+      overflow={'hidden'}>
+      <Stack ml={10}
         spacing={{ base: 8, md: 10 }}
         py={{ base: 20, md: 28 }}
         direction={{ base: 'column', md: 'row' }}>
@@ -39,10 +75,10 @@ export function SobreMim() {
             </Text>
             <br />
             <Text as={'span'} color={'green.600'}>
-              use everywhere!
+              Seja bem vindo <br></br> ao meu portifólio!
             </Text>
           </Heading>
-          <Text color={useColorModeValue('gray.700', 'gray.200')}>
+          <Text mr={'10'} color={useColorModeValue('gray.700', 'gray.200')}>
             Snippy is a rich coding snippets app that lets you create your own code
             snippets, categorize them, and even sync them in the cloud so you can use them
             anywhere. All that is free!
@@ -54,65 +90,63 @@ export function SobreMim() {
               fontWeight={'normal'}
               px={6}
               colorScheme={'red'}
-              bg={'green.500'}
+              bg={'green.300'}
               _hover={{ bg: 'green.700' }}>
               Get started
             </Button>
           </Stack>
         </Stack>
-        <Flex
-          flex={1}
-          justify={'center'}
-          align={'center'}
-          position={'relative'}
-          w={'full'}>
-          <Blob
-            w={'150%'}
-            h={'150%'}
-            position={'absolute'}
-            top={'-24%'}
-            left={0}
-            zIndex={-1}
-            color={useColorModeValue('green.50', 'green.700')}
-          />
+        <Center py={5}>
           <Box
-            position={'relative'}
-            height={'auto'}
-            rounded={'2xl'}
+            mr={20}
+            maxW={'600px'}
+            w={'full'}
+            bg={useColorModeValue('gray.50', 'gray.900')}
             boxShadow={'2xl'}
-            width={'auto'}
+            rounded={'md'}
             overflow={'hidden'}>
-            <Image
-              alt={'Foto'}
-              fit={'cover'}
-              align={'center'}
-              w={'100%'}
-              h={'100%'}
-              src={
-                'Imagem_perfil.jpeg'
-              }
-            />
+            <Flex
+              h={'180px'}
+              w={'full'}
+              zIndex={-1}
+              bg={useColorModeValue('green.100', 'green.600')} />
+            <Flex justify={'center'} mt={-130}>
+              <Avatar
+                objectFit={'cover'}
+                rounded={'full'}
+                size={'1'}
+                src={'Imagem_perfil_2.jpeg'}
+                w={'65%'}
+                css={{
+                  border: '3px solid'
+                }}
+              />
+            </Flex>
+
+            <Box p={6}>
+              <Stack spacing={0} align={'center'} mb={20}>
+                <Heading mt={'5'} fontSize={'2xl'} fontWeight={500} fontFamily={'poppins'}>
+                  Roberto Carvalho
+                </Heading>
+                <Divider w={'70%'} mt={'10'} mb={'10'} />
+                <Text fontFamily={'poppind'} fontSize={'20'} color={'gray.500'}>Desenvolvedor Frontend</Text>
+              </Stack>
+
+              <Stack justify={'center'} direction={'row'} spacing={3}>
+                <SocialButton label={'Linkedin'} href={'https://www.linkedin.com/in/roberto-carvalho-bb6130221/'}>
+                  <FaLinkedin />
+                </SocialButton>
+                <SocialButton label={'Whatsapp'} href={'https://wa.me/+5541997265642'}>
+                  <FaWhatsapp />
+                </SocialButton>
+                <SocialButton label={'Github'} href={'https://github.com/beto-luis'}>
+                  <FaGithub />
+                </SocialButton>
+              </Stack>
+            </Box>
           </Box>
-        </Flex>
+        </Center>
       </Stack>
     </Container>
-  )
-}
-
-const Blob = (props: IconProps) => {
-  return (
-    <Icon
-      width={'100%'}
-      viewBox="0 0 578 440"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}>
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M239.184 439.443c-55.13-5.419-110.241-21.365-151.074-58.767C42.307 338.722-7.478 282.729.938 221.217c8.433-61.644 78.896-91.048 126.871-130.712 34.337-28.388 70.198-51.348 112.004-66.78C282.34 8.024 325.382-3.369 370.518.904c54.019 5.115 112.774 10.886 150.881 49.482 39.916 40.427 49.421 100.753 53.385 157.402 4.13 59.015 11.255 128.44-30.444 170.44-41.383 41.683-111.6 19.106-169.213 30.663-46.68 9.364-88.56 35.21-135.943 30.551z"
-        fill="currentColor"
-      />
-    </Icon>
   )
 }
