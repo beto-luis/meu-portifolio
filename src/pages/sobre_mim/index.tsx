@@ -17,7 +17,6 @@ export function SobreMim() {
     <Container maxW={'100%'}
     overflow={'hidden'}>
       <Stack
-        align={'center'}
         spacing={{ base: 8, md: 10 }}
         py={{ base: 20, md: 28 }}
         direction={{ base: 'column', md: 'row' }}>
@@ -39,7 +38,7 @@ export function SobreMim() {
               Olá,
             </Text>
             <br />
-            <Text as={'span'} color={'blue.400'}>
+            <Text as={'span'} color={'green.600'}>
               use everywhere!
             </Text>
           </Heading>
@@ -55,8 +54,8 @@ export function SobreMim() {
               fontWeight={'normal'}
               px={6}
               colorScheme={'red'}
-              bg={'blue.400'}
-              _hover={{ bg: 'blue.500' }}>
+              bg={'green.500'}
+              _hover={{ bg: 'green.700' }}>
               Get started
             </Button>
           </Stack>
@@ -71,10 +70,10 @@ export function SobreMim() {
             w={'150%'}
             h={'150%'}
             position={'absolute'}
-            top={'-22%'}
+            top={'-24%'}
             left={0}
             zIndex={-1}
-            color={useColorModeValue('blue.50', 'blue.400')}
+            color={useColorModeValue('green.50', 'green.700')}
           />
           <Box
             position={'relative'}

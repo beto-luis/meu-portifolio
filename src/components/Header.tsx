@@ -9,6 +9,7 @@ import {
     Spacer,
     Text,
     chakra,
+    Link,
 } from '@chakra-ui/react'
 import { MoonIcon, SunIcon } from '@chakra-ui/icons'
 
@@ -17,7 +18,7 @@ export function Header() {
     return (
         <>  
             <Box h={20} w="100%" position={'fixed'} zIndex="1"
-                bg={useColorModeValue('gray.50', 'gray.900')}
+                bg={useColorModeValue('gray.50', 'gray.900',)}
                 color={useColorModeValue('gray.700', 'gray.200')} px={4}>
                 <Flex alignItems={'center'} justifyContent={'space-between'}>
                     <Flex w="100%" gap="3" p="5" direction="row" align="center" >
@@ -33,7 +34,9 @@ export function Header() {
                             <Button _hover={{
                                 bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
                             }} variant='ghost'>
-                                Projetos
+                                <Link href="/Projetos">
+                                <a>Projetos</a>
+                                </Link>
                             </Button>
                             <Button _hover={{
                                 bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
