@@ -8,15 +8,17 @@ import {
     Heading,
     Spacer,
     Text,
-    chakra,
     Link,
 } from '@chakra-ui/react'
+import NextLink from 'next/link'
+import { useRouter } from 'next/router'
 import { MoonIcon, SunIcon } from '@chakra-ui/icons'
 
 export function Header() {
     const { colorMode, toggleColorMode } = useColorMode()
+    const router = useRouter()
     return (
-        <>  
+        <>
             <Box h={20} w="100%" position={'fixed'} zIndex="1"
                 bg={useColorModeValue('gray.50', 'gray.900',)}
                 color={useColorModeValue('gray.700', 'gray.200')} px={4}>
@@ -34,8 +36,8 @@ export function Header() {
                             <Button _hover={{
                                 bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
                             }} variant='ghost'>
-                                <Link href="/Projetos">
-                                <a>Projetos</a>
+                                <Link as={NextLink} href='projetos/index.tsx'>
+                                    Projetos
                                 </Link>
                             </Button>
                             <Button _hover={{
