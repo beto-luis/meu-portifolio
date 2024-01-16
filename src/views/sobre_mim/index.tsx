@@ -61,7 +61,7 @@ export function SobreMim() {
             lineHeight={1.1}
             fontWeight={600}
             fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
-            <Text
+            <Text 
               color={useColorModeValue('gray.700', 'gray.200')}
               as={'span'}
               position={'relative'}
@@ -78,10 +78,8 @@ export function SobreMim() {
               Seja bem vindo <br></br> ao meu portifólio!
             </Text>
           </Heading>
-          <Text mr={'10'} color={useColorModeValue('gray.700', 'gray.200')}>
-            Snippy is a rich coding snippets app that lets you create your own code
-            snippets, categorize them, and even sync them in the cloud so you can use them
-            anywhere. All that is free!
+          <Text mr={'10'} color={useColorModeValue('gray.700', 'gray.200')} fontFamily={'poppins'}>
+          Sou um profissional dedicado e em busca de uma nova carreira no desenvolvimento web. Atualmente, tenho experiência na indústria mecânica, onde busquei constantemente conhecimento e aprimorei minhas habilidades. No entanto, percebi que minha verdadeira paixão está na tecnologia e estou determinado a seguir esse caminho. <br></br>
           </Text>
           <Stack spacing={{ base: 4, sm: 6 }} direction={{ base: 'column', sm: 'row' }}>
             <Button

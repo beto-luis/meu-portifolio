@@ -1,16 +1,17 @@
 import { Header } from "@/layout/header";
 import { Footer } from "@/layout/footer";
-import { SobreMim } from "@/views/sobre_mim";
+import { MeusProjetos } from "@/views/projetos"
 
-function _app() {
+
+function projetos() {
   
   return (
     <div>
       <Header />
-      <SobreMim />
+      <MeusProjetos />
       <Footer />
     </div>
   );
 }
 
-export default _app;
+export default projetos;

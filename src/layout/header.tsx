@@ -8,7 +8,6 @@ import {
     Heading,
     Spacer,
     Text,
-    Link,
 } from '@chakra-ui/react'
 import { MoonIcon, SunIcon } from '@chakra-ui/icons'
 import { useRouter } from 'next/router'
@@ -34,7 +33,7 @@ export function Header() {
                             </Button>
                             <Button as={'a'} _hover={{
                                 bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
-                            }} variant='ghost' href='./projetos/page'>
+                            }} variant='ghost' href='/projetos'>
                                 Projetos
                             </Button>
                             <Button as={'a'} _hover={{
