@@ -11,8 +11,10 @@ import {
     Link,
 } from '@chakra-ui/react'
 import { MoonIcon, SunIcon } from '@chakra-ui/icons'
+import { useRouter } from 'next/router'
 
 export function Header() {
+    const router = useRouter()
     const { colorMode, toggleColorMode } = useColorMode()
     return (
         <>
@@ -27,12 +29,12 @@ export function Header() {
                         <Flex gap="5">
                             <Button as={'a'} _hover={{
                                 bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
-                            }} variant='ghost' href='src\pages\sobre_mim\index.tsx'>
+                            }} variant='ghost' href='/'>
                                 Sobre mim
                             </Button>
                             <Button as={'a'} _hover={{
                                 bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
-                            }} variant='ghost' href='src\pages\projetos\index.tsx'>
+                            }} variant='ghost' href='./projetos/page'>
                                 Projetos
                             </Button>
                             <Button as={'a'} _hover={{
@@ -40,6 +42,9 @@ export function Header() {
                             }} variant='ghost' href=''>
                                 Contato
                             </Button>
+                            {/* <Button onClick={() => router.push('./projetos/page')}>
+                                Click here to read more
+                            </Button> */}
                         </Flex>
                     </Flex>
 
