@@ -38,7 +38,7 @@ export function Header() {
                             </Button>
                             <Button as={'a'} _hover={{
                                 bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
-                            }} variant='ghost' href=''>
+                            }} variant='ghost' href='/contato'>
                                 Contato
                             </Button>
                             {/* <Button onClick={() => router.push('./projetos/page')}>
