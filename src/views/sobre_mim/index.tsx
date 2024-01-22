@@ -100,7 +100,7 @@ export function SobreMim() {
             maxW={'600px'}
             w={'full'}
             bg={useColorModeValue('gray.50', 'gray.900')}
-            boxShadow={'2xl'}
+            boxShadow={'2x1'}
             rounded={'md'}
             overflow={'hidden'}>
             <Flex

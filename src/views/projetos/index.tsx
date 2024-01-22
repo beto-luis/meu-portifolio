@@ -1,13 +1,14 @@
 import {
   Image,
   Box,
-  chakra,
   Flex,
   Heading,
   SimpleGrid,
   useColorModeValue,
-  Card,
   Stack,
+  Center,
+  Text,
+  Spacer,
 } from '@chakra-ui/react'
 import { Link } from '@chakra-ui/react'
 
@@ -16,7 +17,7 @@ const informacoesProjeto = [
     name: 'Buscador de Usuários do GitHub',
     role: 'Chief Marketing Officer',
     content:
-      'It really saves me time and effort. It is exactly what our business has been lacking. EEZY is the most valuable business resource we have EVER purchased. After using EEZY my business skyrocketed!',
+      'Esse projeto foi feito com HTML, CSS e JavaScript. Nele eu pude colocar em prática meu aprendizado até o momento. Aproveitei também para testar meu conhecimento em consumo de API`s e leitura de documentação. Por mais que seja um projeto simples, foi um excelente desafio para elevar meu nível de conhecimento.',
     image:
       'fetch-github.png',
   },
@@ -57,35 +58,233 @@ interface ProjetosCardProps {
 function ProjectsCard(props: ProjetosCardProps) {
   const { name, role, content, image, } = props
   return (
-    <Card
-      direction={{ base: 'column', sm: 'row' }}
-      overflow='hidden'
-      variant='outline'
-      height={'400px'}
-    >
-      <Link target='_Blank' as={'a'} href={'https://github.com/beto-luis/projeto-fetch-github-api'}>
-      <Image
-        objectFit='cover'
-        maxW={{ base: '100%', sm: '500px' }}
-        src={image}
-      />
-      </Link>
+    <Center py={5} flexDirection={'column'}>
+      <Flex
+        maxW={'800px'}
+        w={'full'}
+        bg={useColorModeValue('gray.50', 'gray.900')}
+        color={useColorModeValue('gray.700', 'gray.200')}
+        boxShadow={'lg'}
+        rounded={'md'}
+        overflow={'hidden'}
+        mb={'20'}>
+        <Flex justify={'center'}>
+          <Link target='_Blank' as={'a'} href={'https://github.com/beto-luis/projeto-fetch-github-api'} variant='custom'>
+            <Image
+              position={'relative'}
+              objectFit='cover'
+              w={''}
+              src={image}
+              _after={{
+                position: 'absolute',
+                src: { image },
+                transition: '0.2s',
+              }}
+              _hover={{
+                _after: { opacity: '1' },
+                transform: (1.1),
+              }}
+            />
+          </Link>
+        </Flex>
 
-      <Stack justifyContent={'center'} mx={'10'}  maxW={{ base: '100%', sm: '400px'}}>
-      <Flex direction={'column'} textAlign={'left'} justifyContent={'center'}>
-        <chakra.p fontFamily={'Poppins'} fontWeight={'bold'} fontSize={14}>
-          {name} <br></br>
-          <chakra.span fontFamily={'Inter'} fontWeight={'medium'} color={'gray.500'}>
-            {' '}
-            {role}
-          </chakra.span>
-        </chakra.p>
-        <chakra.p fontFamily={'Inter'} fontWeight={'medium'} fontSize={'15px'} pb={4}>
-          {content}
-        </chakra.p>
+        <Box p={6} textAlign={'left'} maxW={400}>
+          <Stack spacing={0}>
+            <Heading fontSize={'20'} fontWeight={500} fontFamily={'poppins'}>
+              Buscador de Usuários do GitHub
+            </Heading>
+            <Text fontFamily={'poppins'} fontSize={'16'} color={'gray.500'} mt={'5'}>Esse projeto foi feito com HTML, CSS e JavaScript. Nele eu pude colocar em prática meu aprendizado até o momento. 
+            <br/>
+            <br/>
+            Aproveitei também para testar meu conhecimento em consumo de API`s e leitura de documentação.
+            <br/>
+            <br/>
+            Por mais que seja um projeto simples, foi um excelente desafio para elevar meu nível de conhecimento.</Text>
+          </Stack>
+        </Box>
       </Flex>
-      </Stack>
-    </Card>
+
+
+      <Flex
+        maxW={'800px'}
+        w={'full'}
+        bg={useColorModeValue('gray.50', 'gray.900')}
+        color={useColorModeValue('gray.700', 'gray.200')}
+        boxShadow={'lg'}
+        rounded={'md'}
+        overflow={'hidden'}
+        mb={'20'}>
+        <Flex justify={'center'}>
+          <Link target='_Blank' as={'a'} href={'https://github.com/beto-luis/projeto-fetch-github-api'} variant='custom'>
+            <Image
+              position={'relative'}
+              objectFit='cover'
+              w={''}
+              src={image}
+              _after={{
+                position: 'absolute',
+                src: { image },
+                transition: '0.2s',
+              }}
+              _hover={{
+                _after: { opacity: '1' },
+                transform: (1.1),
+              }}
+            />
+          </Link>
+        </Flex>
+
+        <Box p={6} textAlign={'left'} maxW={400}>
+          <Stack spacing={0}>
+            <Heading fontSize={'20'} fontWeight={500} fontFamily={'poppins'}>
+              Buscador de Usuários do GitHub
+            </Heading>
+            <Text fontFamily={'poppins'} fontSize={'16'} color={'gray.500'} mt={'5'}>Esse projeto foi feito com HTML, CSS e JavaScript. Nele eu pude colocar em prática meu aprendizado até o momento. 
+            <br/>
+            <br/>
+            Aproveitei também para testar meu conhecimento em consumo de API`s e leitura de documentação.
+            <br/>
+            <br/>
+            Por mais que seja um projeto simples, foi um excelente desafio para elevar meu nível de conhecimento.</Text>
+          </Stack>
+        </Box>
+      </Flex>
+
+      <Flex
+        maxW={'800px'}
+        w={'full'}
+        bg={useColorModeValue('gray.50', 'gray.900')}
+        color={useColorModeValue('gray.700', 'gray.200')}
+        boxShadow={'lg'}
+        rounded={'md'}
+        overflow={'hidden'}
+        mb={'20'}>
+        <Flex justify={'center'}>
+          <Link target='_Blank' as={'a'} href={'https://github.com/beto-luis/projeto-fetch-github-api'} variant='custom'>
+            <Image
+              position={'relative'}
+              objectFit='cover'
+              w={''}
+              src={image}
+              _after={{
+                position: 'absolute',
+                src: { image },
+                transition: '0.2s',
+              }}
+              _hover={{
+                _after: { opacity: '1' },
+                transform: (1.1),
+              }}
+            />
+          </Link>
+        </Flex>
+
+        <Box p={6} textAlign={'left'} maxW={400}>
+          <Stack spacing={0}>
+            <Heading fontSize={'20'} fontWeight={500} fontFamily={'poppins'}>
+              Buscador de Usuários do GitHub
+            </Heading>
+            <Text fontFamily={'poppins'} fontSize={'16'} color={'gray.500'} mt={'5'}>Esse projeto foi feito com HTML, CSS e JavaScript. Nele eu pude colocar em prática meu aprendizado até o momento. 
+            <br/>
+            <br/>
+            Aproveitei também para testar meu conhecimento em consumo de API`s e leitura de documentação.
+            <br/>
+            <br/>
+            Por mais que seja um projeto simples, foi um excelente desafio para elevar meu nível de conhecimento.</Text>
+          </Stack>
+        </Box>
+      </Flex>
+
+      <Flex
+        maxW={'800px'}
+        w={'full'}
+        bg={useColorModeValue('gray.50', 'gray.900')}
+        color={useColorModeValue('gray.700', 'gray.200')}
+        boxShadow={'lg'}
+        rounded={'md'}
+        overflow={'hidden'}
+        mb={'20'}>
+        <Flex justify={'center'}>
+          <Link target='_Blank' as={'a'} href={'https://github.com/beto-luis/projeto-fetch-github-api'} variant='custom'>
+            <Image
+              position={'relative'}
+              objectFit='cover'
+              w={''}
+              src={image}
+              _after={{
+                position: 'absolute',
+                src: { image },
+                transition: '0.2s',
+              }}
+              _hover={{
+                _after: { opacity: '1' },
+                transform: (1.1),
+              }}
+            />
+          </Link>
+        </Flex>
+
+        <Box p={6} textAlign={'left'} maxW={400}>
+          <Stack spacing={0}>
+            <Heading fontSize={'20'} fontWeight={500} fontFamily={'poppins'}>
+              Buscador de Usuários do GitHub
+            </Heading>
+            <Text fontFamily={'poppins'} fontSize={'16'} color={'gray.500'} mt={'5'}>Esse projeto foi feito com HTML, CSS e JavaScript. Nele eu pude colocar em prática meu aprendizado até o momento. 
+            <br/>
+            <br/>
+            Aproveitei também para testar meu conhecimento em consumo de API`s e leitura de documentação.
+            <br/>
+            <br/>
+            Por mais que seja um projeto simples, foi um excelente desafio para elevar meu nível de conhecimento.</Text>
+          </Stack>
+        </Box>
+      </Flex>
+
+      <Flex
+        maxW={'800px'}
+        w={'full'}
+        bg={useColorModeValue('gray.50', 'gray.900')}
+        color={useColorModeValue('gray.700', 'gray.200')}
+        boxShadow={'lg'}
+        rounded={'md'}
+        overflow={'hidden'}
+        mb={'20'}>
+        <Flex justify={'center'}>
+          <Link target='_Blank' as={'a'} href={'https://github.com/beto-luis/projeto-fetch-github-api'} variant='custom'>
+            <Image
+              position={'relative'}
+              objectFit='cover'
+              w={''}
+              src={image}
+              _after={{
+                position: 'absolute',
+                src: { image },
+                transition: '0.2s',
+              }}
+              _hover={{
+                _after: { opacity: '1' },
+                transform: (1.1),
+              }}
+            />
+          </Link>
+        </Flex>
+
+        <Box p={6} textAlign={'left'} maxW={400}>
+          <Stack spacing={0}>
+            <Heading fontSize={'20'} fontWeight={500} fontFamily={'poppins'}>
+              Buscador de Usuários do GitHub
+            </Heading>
+            <Text fontFamily={'poppins'} fontSize={'16'} color={'gray.500'} mt={'5'}>Esse projeto foi feito com HTML, CSS e JavaScript. Nele eu pude colocar em prática meu aprendizado até o momento. 
+            <br/>
+            <br/>
+            Aproveitei também para testar meu conhecimento em consumo de API`s e leitura de documentação.
+            <br/>
+            <br/>
+            Por mais que seja um projeto simples, foi um excelente desafio para elevar meu nível de conhecimento.</Text>
+          </Stack>
+        </Box>
+      </Flex>
+    </Center>
   )
 }
 
@@ -95,12 +294,13 @@ export function MeusProjetos() {
       textAlign={'center'}
       pt={10}
       justifyContent={'center'}
+      alignItems={'center'}
       direction={'column'}
       width={'100%'}
       overflow={'hidden'}>
-      <Box w={'100%'} h={150} margin={'auto'} bg={useColorModeValue('green.100', 'green.600')}>
+      <Box w={800} rounded={'full'} h={100} mt={'14'} bg={useColorModeValue('green.100', 'green.600')}>
         <Heading
-          py={16}
+          my={'6'}
           fontSize={40}
           fontFamily={'Poppins'}
           fontWeight={'bold'}
