@@ -8,285 +8,8 @@ import {
   Stack,
   Center,
   Text,
-  Spacer,
 } from '@chakra-ui/react'
 import { Link } from '@chakra-ui/react'
-
-const informacoesProjeto = [
-  {
-    name: 'Buscador de Usuários do GitHub',
-    role: 'Chief Marketing Officer',
-    content:
-      'Esse projeto foi feito com HTML, CSS e JavaScript. Nele eu pude colocar em prática meu aprendizado até o momento. Aproveitei também para testar meu conhecimento em consumo de API`s e leitura de documentação. Por mais que seja um projeto simples, foi um excelente desafio para elevar meu nível de conhecimento.',
-    image:
-      'fetch-github.png',
-  },
-  /* {
-    name: 'Krysta B.',
-    role: 'Entrepreneur',
-    content:
-      "I didn't even need training. We've used EEZY for the last five years. I have gotten at least 50 times the value from EEZY. I made back the purchase price in just 48 hours!",
-    avatar:
-      'https://images.unsplash.com/photo-1598550874175-4d0ef436c909?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
-  },
-  {
-    name: 'Darcy L.',
-    role: 'Movie star',
-    content:
-      "Thank you for making it painless, pleasant and most of all, hassle free! I'm good to go. No matter where you go, EEZY is the coolest, most happening thing around! I love EEZY!",
-    avatar:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=334&q=80',
-  },
-  {
-    name: 'Daniel T.',
-    role: 'Musician',
-    content:
-      'I am so pleased with this product. EEZY is both attractive and highly adaptable. Without EEZY, we would have gone bankrupt by now. Thank you for creating this product!',
-    avatar:
-      'https://images.unsplash.com/photo-1606513542745-97629752a13b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
-  }, */
-]
-
-interface ProjetosCardProps {
-  name: string
-  role: string
-  content: string
-  image: string
-  index: number
-}
-
-function ProjectsCard(props: ProjetosCardProps) {
-  const { name, role, content, image, } = props
-  return (
-    <Center py={5} flexDirection={'column'}>
-      <Flex
-        maxW={'800px'}
-        w={'full'}
-        bg={useColorModeValue('gray.50', 'gray.900')}
-        color={useColorModeValue('gray.700', 'gray.200')}
-        boxShadow={'lg'}
-        rounded={'md'}
-        overflow={'hidden'}
-        mb={'20'}>
-        <Flex justify={'center'}>
-          <Link target='_Blank' as={'a'} href={'https://github.com/beto-luis/projeto-fetch-github-api'} variant='custom'>
-            <Image
-              position={'relative'}
-              objectFit='cover'
-              w={''}
-              src={image}
-              _after={{
-                position: 'absolute',
-                src: { image },
-                transition: '0.2s',
-              }}
-              _hover={{
-                _after: { opacity: '1' },
-                transform: (1.1),
-              }}
-            />
-          </Link>
-        </Flex>
-
-        <Box p={6} textAlign={'left'} maxW={400}>
-          <Stack spacing={0}>
-            <Heading fontSize={'20'} fontWeight={500} fontFamily={'poppins'}>
-              Buscador de Usuários do GitHub
-            </Heading>
-            <Text fontFamily={'poppins'} fontSize={'16'} color={'gray.500'} mt={'5'}>Esse projeto foi feito com HTML, CSS e JavaScript. Nele eu pude colocar em prática meu aprendizado até o momento. 
-            <br/>
-            <br/>
-            Aproveitei também para testar meu conhecimento em consumo de API`s e leitura de documentação.
-            <br/>
-            <br/>
-            Por mais que seja um projeto simples, foi um excelente desafio para elevar meu nível de conhecimento.</Text>
-          </Stack>
-        </Box>
-      </Flex>
-
-
-      <Flex
-        maxW={'800px'}
-        w={'full'}
-        bg={useColorModeValue('gray.50', 'gray.900')}
-        color={useColorModeValue('gray.700', 'gray.200')}
-        boxShadow={'lg'}
-        rounded={'md'}
-        overflow={'hidden'}
-        mb={'20'}>
-        <Flex justify={'center'}>
-          <Link target='_Blank' as={'a'} href={'https://github.com/beto-luis/projeto-fetch-github-api'} variant='custom'>
-            <Image
-              position={'relative'}
-              objectFit='cover'
-              w={''}
-              src={image}
-              _after={{
-                position: 'absolute',
-                src: { image },
-                transition: '0.2s',
-              }}
-              _hover={{
-                _after: { opacity: '1' },
-                transform: (1.1),
-              }}
-            />
-          </Link>
-        </Flex>
-
-        <Box p={6} textAlign={'left'} maxW={400}>
-          <Stack spacing={0}>
-            <Heading fontSize={'20'} fontWeight={500} fontFamily={'poppins'}>
-              Buscador de Usuários do GitHub
-            </Heading>
-            <Text fontFamily={'poppins'} fontSize={'16'} color={'gray.500'} mt={'5'}>Esse projeto foi feito com HTML, CSS e JavaScript. Nele eu pude colocar em prática meu aprendizado até o momento. 
-            <br/>
-            <br/>
-            Aproveitei também para testar meu conhecimento em consumo de API`s e leitura de documentação.
-            <br/>
-            <br/>
-            Por mais que seja um projeto simples, foi um excelente desafio para elevar meu nível de conhecimento.</Text>
-          </Stack>
-        </Box>
-      </Flex>
-
-      <Flex
-        maxW={'800px'}
-        w={'full'}
-        bg={useColorModeValue('gray.50', 'gray.900')}
-        color={useColorModeValue('gray.700', 'gray.200')}
-        boxShadow={'lg'}
-        rounded={'md'}
-        overflow={'hidden'}
-        mb={'20'}>
-        <Flex justify={'center'}>
-          <Link target='_Blank' as={'a'} href={'https://github.com/beto-luis/projeto-fetch-github-api'} variant='custom'>
-            <Image
-              position={'relative'}
-              objectFit='cover'
-              w={''}
-              src={image}
-              _after={{
-                position: 'absolute',
-                src: { image },
-                transition: '0.2s',
-              }}
-              _hover={{
-                _after: { opacity: '1' },
-                transform: (1.1),
-              }}
-            />
-          </Link>
-        </Flex>
-
-        <Box p={6} textAlign={'left'} maxW={400}>
-          <Stack spacing={0}>
-            <Heading fontSize={'20'} fontWeight={500} fontFamily={'poppins'}>
-              Buscador de Usuários do GitHub
-            </Heading>
-            <Text fontFamily={'poppins'} fontSize={'16'} color={'gray.500'} mt={'5'}>Esse projeto foi feito com HTML, CSS e JavaScript. Nele eu pude colocar em prática meu aprendizado até o momento. 
-            <br/>
-            <br/>
-            Aproveitei também para testar meu conhecimento em consumo de API`s e leitura de documentação.
-            <br/>
-            <br/>
-            Por mais que seja um projeto simples, foi um excelente desafio para elevar meu nível de conhecimento.</Text>
-          </Stack>
-        </Box>
-      </Flex>
-
-      <Flex
-        maxW={'800px'}
-        w={'full'}
-        bg={useColorModeValue('gray.50', 'gray.900')}
-        color={useColorModeValue('gray.700', 'gray.200')}
-        boxShadow={'lg'}
-        rounded={'md'}
-        overflow={'hidden'}
-        mb={'20'}>
-        <Flex justify={'center'}>
-          <Link target='_Blank' as={'a'} href={'https://github.com/beto-luis/projeto-fetch-github-api'} variant='custom'>
-            <Image
-              position={'relative'}
-              objectFit='cover'
-              w={''}
-              src={image}
-              _after={{
-                position: 'absolute',
-                src: { image },
-                transition: '0.2s',
-              }}
-              _hover={{
-                _after: { opacity: '1' },
-                transform: (1.1),
-              }}
-            />
-          </Link>
-        </Flex>
-
-        <Box p={6} textAlign={'left'} maxW={400}>
-          <Stack spacing={0}>
-            <Heading fontSize={'20'} fontWeight={500} fontFamily={'poppins'}>
-              Buscador de Usuários do GitHub
-            </Heading>
-            <Text fontFamily={'poppins'} fontSize={'16'} color={'gray.500'} mt={'5'}>Esse projeto foi feito com HTML, CSS e JavaScript. Nele eu pude colocar em prática meu aprendizado até o momento. 
-            <br/>
-            <br/>
-            Aproveitei também para testar meu conhecimento em consumo de API`s e leitura de documentação.
-            <br/>
-            <br/>
-            Por mais que seja um projeto simples, foi um excelente desafio para elevar meu nível de conhecimento.</Text>
-          </Stack>
-        </Box>
-      </Flex>
-
-      <Flex
-        maxW={'800px'}
-        w={'full'}
-        bg={useColorModeValue('gray.50', 'gray.900')}
-        color={useColorModeValue('gray.700', 'gray.200')}
-        boxShadow={'lg'}
-        rounded={'md'}
-        overflow={'hidden'}
-        mb={'20'}>
-        <Flex justify={'center'}>
-          <Link target='_Blank' as={'a'} href={'https://github.com/beto-luis/projeto-fetch-github-api'} variant='custom'>
-            <Image
-              position={'relative'}
-              objectFit='cover'
-              w={''}
-              src={image}
-              _after={{
-                position: 'absolute',
-                src: { image },
-                transition: '0.2s',
-              }}
-              _hover={{
-                _after: { opacity: '1' },
-                transform: (1.1),
-              }}
-            />
-          </Link>
-        </Flex>
-
-        <Box p={6} textAlign={'left'} maxW={400}>
-          <Stack spacing={0}>
-            <Heading fontSize={'20'} fontWeight={500} fontFamily={'poppins'}>
-              Buscador de Usuários do GitHub
-            </Heading>
-            <Text fontFamily={'poppins'} fontSize={'16'} color={'gray.500'} mt={'5'}>Esse projeto foi feito com HTML, CSS e JavaScript. Nele eu pude colocar em prática meu aprendizado até o momento. 
-            <br/>
-            <br/>
-            Aproveitei também para testar meu conhecimento em consumo de API`s e leitura de documentação.
-            <br/>
-            <br/>
-            Por mais que seja um projeto simples, foi um excelente desafio para elevar meu nível de conhecimento.</Text>
-          </Stack>
-        </Box>
-      </Flex>
-    </Center>
-  )
-}
 
 export function MeusProjetos() {
   return (
@@ -309,9 +32,261 @@ export function MeusProjetos() {
         </Heading>
       </Box>
       <SimpleGrid columns={{ base: 1 }} spacing={'20'} mt={16} mb={16} mx={'auto'}>
-        {informacoesProjeto.map((cardInfo, index) => (
-          <ProjectsCard key={index} {...cardInfo} index={index} />
-        ))}
+        <Center py={5} flexDirection={'column'}>
+          <Flex
+            maxW={'800px'}
+            w={'full'}
+            bg={useColorModeValue('gray.50', 'gray.900')}
+            color={useColorModeValue('gray.700', 'gray.200')}
+            boxShadow={'lg'}
+            rounded={'md'}
+            overflow={'hidden'}
+            mb={'20'}>
+            <Flex justify={'center'}>
+              <Link target='_Blank' as={'a'} href={'https://github.com/beto-luis/projeto-fetch-github-api'} variant='custom'>
+                <Image
+                  position={'relative'}
+                  objectFit='cover'
+                  h={'100%'}
+                  src={'fetch-github.png'}
+                  _after={{
+                    position: 'absolute',
+                    transition: '0.2s',
+                  }}
+                  _hover={{
+                    opacity: '0.8',
+                    transform: (1.1),
+                  }}
+                />
+              </Link>
+            </Flex>
+
+            <Box p={6} textAlign={'left'} maxW={400}>
+              <Stack spacing={0}>
+                <Heading fontSize={'20'} fontWeight={500} fontFamily={'poppins'}>
+                  Buscador de Usuários do GitHub
+                </Heading>
+                <Text fontFamily={'poppins'} fontSize={'16'} color={useColorModeValue('gray.600', 'gray.300')} mt={'5'}>Esse projeto foi feito com HTML, CSS e JavaScript. Nele eu pude colocar em prática meu aprendizado até o momento.
+                  <br />
+                  <br />
+                  Aproveitei também para testar meu conhecimento em consumo de API`s e leitura de documentação.
+                  <br />
+                  <br />
+                  Por mais que sua funcionalidade seja simples, foi um excelente desafio para elevar meu nível de conhecimento.</Text>
+              </Stack>
+            </Box>
+          </Flex>
+
+          <Flex
+            maxW={'800px'}
+            w={'full'}
+            bg={useColorModeValue('gray.50', 'gray.900')}
+            color={useColorModeValue('gray.700', 'gray.200')}
+            boxShadow={'lg'}
+            rounded={'md'}
+            overflow={'hidden'}
+            mb={'20'}>
+            <Flex justify={'center'}>
+              <Link target='_Blank' as={'a'} href={'https://beto-luis.github.io/landing-page-com-grid-e-flex/'} variant='custom'>
+                <Image
+                  position={'relative'}
+                  objectFit='cover'
+                  h={''}
+                  src={'landing-page.png'}
+                  _before={{
+                    position: 'absolute',
+                    transition: '0.2s',
+                  }}
+                  _hover={{
+                    opacity: '0.8',
+                    transform: (1.1),
+                  }}
+                />
+              </Link>
+            </Flex>
+
+            <Box p={6} textAlign={'left'} maxW={400}>
+              <Stack spacing={0}>
+                <Heading fontSize={'20'} fontWeight={500} fontFamily={'poppins'}>
+                  Landing page com flex e grid
+                </Heading>
+                <Text fontFamily={'poppins'} fontSize={'16'} color={useColorModeValue('gray.600', 'gray.300')} mt={'5'}>Neste projeto utilizei apenas HTML e CSS, nele eu aprendi sobre flex e grid no CSS.
+                  <br />
+                  <br />
+                  Explorei as diversas formas de posicionar os elementos em uma página, tentando sempre manter a boa prática do código limpo.
+                  <br />
+                  <br />
+                  A responsividade foi o principal foco no desenvolvimento desse projeto e também o maior desafio.
+                  </Text>
+              </Stack>
+            </Box>
+          </Flex>
+
+          <Flex
+            maxW={'800px'}
+            w={'full'}
+            bg={useColorModeValue('gray.50', 'gray.900')}
+            color={useColorModeValue('gray.700', 'gray.200')}
+            boxShadow={'lg'}
+            rounded={'md'}
+            overflow={'hidden'}
+            mb={'20'}>
+            <Flex justify={'center'}>
+              <Link target='_Blank' as={'a'} href={'https://beto-luis.github.io/Quest-JS-intermediario/'} variant='custom'>
+                <Image
+                  position={'relative'}
+                  objectFit='cover'
+                  h={''}
+                  src={'formulario.png'}
+                  _before={{
+                    position: 'absolute',
+                    transition: '0.2s',
+                  }}
+                  _hover={{
+                    opacity: '0.8',
+                    transform: (1.1),
+                  }}
+                />
+              </Link>
+            </Flex>
+
+            <Box p={6} textAlign={'left'} maxW={400}>
+              <Stack spacing={0}>
+                <Heading fontSize={'20'} fontWeight={500} fontFamily={'poppins'}>
+                  Formulário de campo obrigatório
+                </Heading>
+                <Text fontFamily={'poppins'} fontSize={'16'} color={useColorModeValue('gray.600', 'gray.300')} mt={'5'}>Esse projeto foi uma Quest de JavaScript do meu primeiro curso.
+                  <br />
+                  <br />
+                  Um dos primeiros projetos em minha jornada de aprendizado como programador.
+                  <br />
+                  <br />
+                  Explorei as diversas formas de posicionar os elementos em uma página, tentando sempre manter a boa prática do código limpo.
+                  </Text>
+              </Stack>
+            </Box>
+          </Flex>
+
+          <Flex
+            maxW={'800px'}
+            w={'full'}
+            bg={useColorModeValue('gray.50', 'gray.900')}
+            color={useColorModeValue('gray.700', 'gray.200')}
+            boxShadow={'lg'}
+            rounded={'md'}
+            overflow={'hidden'}
+            mb={'20'}>
+            <Flex justify={'center'}>
+              <Link target='_Blank' as={'a'} href={'https://beto-luis.github.io/Huddle-landing-page/'} variant='custom'>
+                <Image
+                  position={'relative'}
+                  objectFit='cover'
+                  h={''}
+                  src={'huddle.png'}
+                  _before={{
+                    position: 'absolute',
+                    transition: '0.2s',
+                  }}
+                  _hover={{
+                    opacity: '0.8',
+                    transform: (1.1),
+                  }}
+                />
+                <Image
+                  position={'relative'}
+                  objectFit='cover'
+                  h={''}
+                  src={'huddle-2.png'}
+                  _before={{
+                    position: 'absolute',
+                    transition: '0.2s',
+                  }}
+                  _hover={{
+                    opacity: '0.8',
+                    transform: (1.1),
+                  }}
+                />
+              </Link>
+            </Flex>
+
+            <Box p={6} textAlign={'left'} maxW={400}>
+              <Stack spacing={0}>
+                <Heading fontSize={'20'} fontWeight={500} fontFamily={'poppins'}>
+                  Huddle - FrontEnd Mentor
+                </Heading>
+                <Text fontFamily={'poppins'} fontSize={'16'} color={useColorModeValue('gray.600', 'gray.300')} mt={'5'}>Landing page feita com HTML e CSS, desafio do FrontEnd Mentor.
+                  <br />
+                  <br />
+                  Foi construido para colocar em prática o conhecimento que havia adquirido até o momento como treinamento pessoal.
+                  <br />
+                  <br />
+                  Responsivo e com boas práticas de codificação.
+                  </Text>
+              </Stack>
+            </Box>
+          </Flex>
+
+          <Flex
+            maxW={'800px'}
+            w={'full'}
+            bg={useColorModeValue('gray.50', 'gray.900')}
+            color={useColorModeValue('gray.700', 'gray.200')}
+            boxShadow={'lg'}
+            rounded={'md'}
+            overflow={'hidden'}
+            mb={'20'}>
+            <Flex justify={'center'} direction={'column'}>
+              <Link target='_Blank' as={'a'} href={'https://beto-luis.github.io/projeto-mario/'} variant='custom'>
+                <Image
+                  position={'relative'}
+                  objectFit='cover'
+                  h={''}
+                  src={'projeto-mario.png'}
+                  _before={{
+                    position: 'absolute',
+                    transition: '0.2s',
+                  }}
+                  _hover={{
+                    opacity: '0.8',
+                    transform: (1.1),
+                  }}
+                />
+                <Image
+                position={'relative'}
+                  objectFit='cover'
+                  h={''}
+                  src={'projeto-mario-tr.png'}
+                  _before={{
+                    position: 'absolute',
+                    transition: '0.2s',
+                  }}
+                  _hover={{
+                    opacity: '0.8',
+                    transform: (1.1),
+                  }}
+                />
+              </Link>
+            </Flex>
+
+            <Box p={6} textAlign={'left'} maxW={400}>
+              <Stack spacing={0}>
+                <Heading fontSize={'20'} fontWeight={500} fontFamily={'poppins'}>
+                  Formulário de campo obrigatório
+                </Heading>
+                <Text fontFamily={'poppins'} fontSize={'16'} color={useColorModeValue('gray.600', 'gray.300')} mt={'5'}>Esse projeto foi uma Quest de JavaScript 
+                  <br />
+                  <br />
+                  Um dos primeiros projetos em minha jornada de aprendizado como programador.
+                  <br />
+                  <br />
+                  Explorei as diversas formas de posicionar os elementos em uma página, tentando sempre manter a boa prática do código limpo.
+                  </Text>
+              </Stack>
+            </Box>
+          </Flex>
+
+
+        </Center>
       </SimpleGrid>
     </Flex>
   )

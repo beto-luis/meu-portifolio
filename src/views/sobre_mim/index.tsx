@@ -127,7 +127,7 @@ export function SobreMim() {
                   Roberto Carvalho
                 </Heading>
                 <Divider w={'70%'} mt={'10'} mb={'10'} />
-                <Text fontFamily={'poppind'} fontSize={'20'} color={'gray.500'}>Desenvolvedor Frontend</Text>
+                <Text fontFamily={'poppins'} fontSize={'20'} color={'gray.500'}>Desenvolvedor Frontend</Text>
               </Stack>
 
               <Stack justify={'center'} direction={'row'} spacing={3}>
