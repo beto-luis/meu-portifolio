@@ -11,6 +11,11 @@ import {
   Center,
   VisuallyHidden,
   chakra,
+  AccordionItem,
+  AccordionButton,
+  AccordionIcon,
+  AccordionPanel,
+  Accordion,
 } from '@chakra-ui/react'
 import { ReactNode } from 'react'
 import { FaGithub, FaLinkedin, FaWhatsapp, } from 'react-icons/fa'
@@ -61,7 +66,7 @@ export function SobreMim() {
             lineHeight={1.1}
             fontWeight={600}
             fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
-            <Text 
+            <Text
               color={useColorModeValue('gray.700', 'gray.200')}
               as={'span'}
               position={'relative'}
@@ -78,9 +83,37 @@ export function SobreMim() {
               Seja bem vindo <br></br> ao meu portifólio!
             </Text>
           </Heading>
-          <Text mr={'10'} color={useColorModeValue('gray.700', 'gray.200')} fontFamily={'poppins'}>
-          Sou um profissional dedicado e em busca de uma nova carreira no desenvolvimento web. Atualmente, tenho experiência na indústria mecânica, onde busquei constantemente conhecimento e aprimorei minhas habilidades. No entanto, percebi que minha verdadeira paixão está na tecnologia e estou determinado a seguir esse caminho. <br></br>
-          </Text>
+          <Accordion defaultIndex={[0]} allowMultiple>
+            <AccordionItem>
+              <AccordionButton>
+                <Box as="span" flex='1' textAlign='left' mr={'10'} color={useColorModeValue('gray.700', 'gray.200')} fontFamily={'poppins'}>
+                  Sou um profissional dedicado e em busca de uma nova carreira no desenvolvimento web. Atualmente, tenho experiência na indústria mecânica, onde busquei constantemente conhecimento e aprimorei minhas habilidades. No entanto, percebi que minha verdadeira paixão está na tecnologia e estou determinado a seguir esse caminho.
+                </Box>
+                <AccordionIcon />
+              </AccordionButton>
+              <AccordionPanel pb={4} mr={'10'} color={useColorModeValue('gray.700', 'gray.200')} fontFamily={'poppins'}>
+                Sou um profissional dedicado e apaixonado por desafios. Iniciei minha carreira na indústria, através de uma oportunidade de estudar remuneradamente em uma multinacional [Denso do Brasil]. Nesse périodo conquistei um diploma de eletrotécnico em fabricação industrial, algum tempo depois tive a oportunidade de trabalhar com máquinas CNC e logo me interessei pelo seu sistema de programação, me dediquei muito nessa disciplina durante a faculdade e a complementei com um curso profissionalizante.
+                <br/>
+                <br/>
+                Ao longo dos anos, a minha jornada na indústria me proporcionou uma visão única sobre a eficiência operacional, a automação e a precisão técnica. No entanto, a busca incessante pelo aprendizado e a vontade de explorar novos horizontes me levaram a um ponto crucial em minha carreira no início do ano passado.
+                <br/>
+                <br/>
+                Decidi embarcar em uma emocionante transição de carreira para o universo da programação web e mobile. Uma vontade que surgira ainda muito jovem e sem um norte para me aproximar da área levou um tempo para reencontrar esse objetivo e então embarcar definitivamente  nessa incrível jornada de conhecimento e desafios. Desde então, tenho mergulhado profundamente nos fundamentos da programação, explorando linguagens como HTML, CSS, JavaScript e frameworks modernos como React.js para o desenvolvimento web e Flutter para o desenvolvimento mobile.
+                <br/>
+                <br/>
+                Minha jornada de aprendizado tem sido marcada por desafios inspiradores e conquistas significativas. A habilidade de traduzir conceitos complexos em soluções interativas e acessíveis tornou-se minha paixão. Ao combinar minha experiência industrial com minha nova paixão pela programação, acredito que possuo uma perspectiva única que pode agregar valor a projetos inovadores.
+                <br/>
+                <br/>
+                Estou entusiasmado para aplicar minha experiência adquirida na indústria e minha aptidão em programação para contribuir de maneira significativa em projetos web e mobile. Estou comprometido em manter-me atualizado com as últimas tendências tecnológicas e em aprimorar constantemente minhas habilidades para enfrentar os desafios dinâmicos do mundo da tecnologia.
+                <br/>
+                <br/>
+                Meu objetivo é integrar as lições aprendidas na indústria com a criatividade e agilidade da programação para criar soluções eficientes e impactantes. Estou aberto a oportunidades emocionantes, colaborações inspiradoras e desafios que me permitam crescer profissionalmente e contribuir para a evolução do cenário tecnológico.
+                <br/>
+                <br/>
+                Estou ansioso para compartilhar minha jornada e minhas habilidades em programação com a comunidade tecnológica, enquanto continuo explorando e construindo um futuro promissor nesta nova fase da minha carreira.
+              </AccordionPanel>
+            </AccordionItem>
+          </Accordion>
           <Stack spacing={{ base: 4, sm: 6 }} direction={{ base: 'column', sm: 'row' }}>
             <Button
               rounded={'full'}

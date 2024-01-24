@@ -8,6 +8,11 @@ import {
   Stack,
   Center,
   Text,
+  Tabs,
+  TabList,
+  Tab,
+  TabPanels,
+  TabPanel,
 } from '@chakra-ui/react'
 import { Link } from '@chakra-ui/react'
 
@@ -117,7 +122,7 @@ export function MeusProjetos() {
                   <br />
                   <br />
                   A responsividade foi o principal foco no desenvolvimento desse projeto e também o maior desafio.
-                  </Text>
+                </Text>
               </Stack>
             </Box>
           </Flex>
@@ -162,7 +167,7 @@ export function MeusProjetos() {
                   <br />
                   <br />
                   Explorei as diversas formas de posicionar os elementos em uma página, tentando sempre manter a boa prática do código limpo.
-                  </Text>
+                </Text>
               </Stack>
             </Box>
           </Flex>
@@ -221,7 +226,7 @@ export function MeusProjetos() {
                   <br />
                   <br />
                   Responsivo e com boas práticas de codificação.
-                  </Text>
+                </Text>
               </Stack>
             </Box>
           </Flex>
@@ -252,7 +257,7 @@ export function MeusProjetos() {
                   }}
                 />
                 <Image
-                position={'relative'}
+                  position={'relative'}
                   objectFit='cover'
                   h={''}
                   src={'projeto-mario-tr.png'}
@@ -271,21 +276,34 @@ export function MeusProjetos() {
             <Box p={6} textAlign={'left'} maxW={400}>
               <Stack spacing={0}>
                 <Heading fontSize={'20'} fontWeight={500} fontFamily={'poppins'}>
-                  Formulário de campo obrigatório
+                  Projeto Mario
                 </Heading>
-                <Text fontFamily={'poppins'} fontSize={'16'} color={useColorModeValue('gray.600', 'gray.300')} mt={'5'}>Esse projeto foi uma Quest de JavaScript 
+                <Text fontFamily={'poppins'} fontSize={'16'} color={useColorModeValue('gray.600', 'gray.300')} mt={'5'}>Nesse projeto foi utilizado HTML, CSS e JavaScript
                   <br />
                   <br />
                   Um dos primeiros projetos em minha jornada de aprendizado como programador.
                   <br />
                   <br />
                   Explorei as diversas formas de posicionar os elementos em uma página, tentando sempre manter a boa prática do código limpo.
-                  </Text>
+                </Text>
               </Stack>
             </Box>
           </Flex>
 
-
+          <Tabs isFitted variant='enclosed'>
+            <TabList mb='20px'>
+              <Tab>One</Tab>
+              <Tab>Two</Tab>
+            </TabList>
+            <TabPanels>
+              <TabPanel>
+                <p>one!</p>
+              </TabPanel>
+              <TabPanel>
+                <p>two!</p>
+              </TabPanel>
+            </TabPanels>
+          </Tabs>
         </Center>
       </SimpleGrid>
     </Flex>
