@@ -158,7 +158,7 @@ export function MeusProjetos() {
             <Box p={6} textAlign={'left'} maxW={400}>
               <Stack spacing={0}>
                 <Heading fontSize={'20'} fontWeight={500} fontFamily={'poppins'}>
-                  Formulário de campo obrigatório
+                  Formulário de preenchimento obrigatório
                 </Heading>
                 <Text fontFamily={'poppins'} fontSize={'16'} color={useColorModeValue('gray.600', 'gray.300')} mt={'5'}>Esse projeto foi uma Quest de JavaScript do meu primeiro curso.
                   <br />
@@ -289,23 +289,44 @@ export function MeusProjetos() {
               </Stack>
             </Box>
           </Flex>
-
-          <Tabs isFitted variant='enclosed'>
-            <TabList mb='20px'>
-              <Tab>One</Tab>
-              <Tab>Two</Tab>
-            </TabList>
-            <TabPanels>
-              <TabPanel>
-                <p>one!</p>
-              </TabPanel>
-              <TabPanel>
-                <p>two!</p>
-              </TabPanel>
-            </TabPanels>
-          </Tabs>
         </Center>
       </SimpleGrid>
+
+      <Flex rounded={'full'} alignItems={'center'} h={120} mx={'10'} mb={'10'} bg={useColorModeValue('green.100', 'green.600')}>
+        <Heading textAlign={'left'}
+          mx={'40'}
+          fontSize={20}
+          fontFamily={'Poppins'}
+          fontWeight={'bold'}
+          color={useColorModeValue('gray.700', 'gray.50')}>
+          Nessa seção eu estarei apresentando os projetos mobile que desenvolvi durante meu aprendizado em Flutter.
+          <br />
+          Eles estão disponiveis também para download, fique a vontade para experimentar suas funcionalidades na prática!
+        </Heading>
+      </Flex>
+
+      <Tabs isFitted variant='enclosed' w={'full'}>
+        <TabList mb='20px'>
+          <Tab color={'green'}>One</Tab>
+          <Tab color={'green'}>Two</Tab>
+          <Tab color={'green'}>Tre</Tab>
+          <Tab color={'green'}>Four</Tab>
+        </TabList>
+        <TabPanels>
+          <TabPanel>
+            <p>one!</p>
+          </TabPanel>
+          <TabPanel>
+            <p>two!</p>
+          </TabPanel>
+          <TabPanel>
+            <p>tre!</p>
+          </TabPanel>
+          <TabPanel>
+            <p>Four!</p>
+          </TabPanel>
+        </TabPanels>
+      </Tabs>
     </Flex>
   )
 }

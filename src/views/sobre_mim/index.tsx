@@ -11,11 +11,6 @@ import {
   Center,
   VisuallyHidden,
   chakra,
-  AccordionItem,
-  AccordionButton,
-  AccordionIcon,
-  AccordionPanel,
-  Accordion,
 } from '@chakra-ui/react'
 import { ReactNode } from 'react'
 import { FaGithub, FaLinkedin, FaWhatsapp, } from 'react-icons/fa'
@@ -81,7 +76,7 @@ export function SobreMim() {
               Olá,
             </Text>
             <br />
-            <Text as={'span'} color={'green.600'}>
+            <Text as={'span'} color={'green.500'}>
               Seja bem vindo <br></br> ao meu portifólio!
             </Text>
           </Heading>
@@ -90,7 +85,7 @@ export function SobreMim() {
               Iniciei minha carreira na indústria, onde desenvolvi habilidades como eletrotécnico e me aprofundei na programação CNC. Decidi, recentemente, realizar uma transição para o universo da programação web e mobile. Minha jornada de aprendizado tem sido caracterizada por desafios inspiradores e conquistas notáveis, destacando minha habilidade em traduzir conceitos complexos em soluções interativas. Comprometido em manter-me atualizado, busco integrar a experiência industrial com a agilidade da programação para contribuir significativamente em projetos inovadores, estando aberto a colaborações inspiradoras e desafios dinâmicos.
             </AccordionItens>
             <AccordionItens title="Clique aqui para saber um pouco mais...">
-              Sou um profissional dedicado e apaixonado por desafios. Iniciei minha carreira na indústria, através de uma oportunidade de estudar remuneradamente em uma multinacional [Denso do Brasil]. Nesse período conquistei um diploma de eletrotécnico em fabricação industrial, algum tempo depois tive a oportunidade de trabalhar com máquinas CNC e logo me interessei pelo seu sistema de programação, me dediquei muito nessa disciplina durante a faculdade e a complementei com um curso profissionalizante.
+              Sou um profissional apaixonado por inovações e desafios. Iniciei minha carreira na indústria, através de uma oportunidade de estudar remuneradamente em uma multinacional [Denso do Brasil]. Nesse período conquistei um diploma de eletrotécnico em fabricação industrial, algum tempo depois tive a oportunidade de trabalhar com máquinas CNC e logo me interessei pelo seu sistema de programação, me dediquei muito nessa disciplina durante a faculdade e a complementei com um curso profissionalizante.
               <br />
               <br />
               Ao longo dos anos, a minha jornada na indústria me proporcionou uma visão única sobre a eficiência operacional, a automação e a precisão técnica. No entanto, a busca incessante pelo aprendizado e a vontade de explorar novos horizontes me levaram a um ponto crucial em minha carreira no início do ano passado.
