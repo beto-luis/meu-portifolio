@@ -10,17 +10,20 @@ import {
     Text,
 } from '@chakra-ui/react'
 import { MoonIcon, SunIcon } from '@chakra-ui/icons'
-import { useRouter } from 'next/router'
 
 export function Header() {
     const { colorMode, toggleColorMode } = useColorMode()
     return (
         <>
-            <Box mt={'0'}
-                h={20} w="100%" position={'fixed'} zIndex="1"
+            <Box
+                h={20} w="100%"
+                position={'fixed'}
+                zIndex="1"
                 bg={useColorModeValue('gray.50', 'gray.900',)}
-                color={useColorModeValue('gray.700', 'gray.200')} px={4}>
-                <Flex alignItems={'center'} justifyContent={'space-between'}>
+                color={useColorModeValue('gray.700', 'gray.200')}
+                px={4}>
+                <Flex alignItems={'center'}
+                    justifyContent={'space-between'}>
                     <Flex w="100%" gap="3" p="5" direction="row" align="center" >
                         <Heading fontSize={25} >Roberto Carvalho /</Heading>
                         <Text fontSize={25} fontWeight={300}>Dev Frontend</Text>
@@ -41,9 +44,6 @@ export function Header() {
                             }} variant='ghost' href='/skills'>
                                 Skills
                             </Button>
-                            {/* <Button onClick={() => router.push('./projetos/page')}>
-                                Click here to read more
-                            </Button> */}
                         </Flex>
                     </Flex>
 
