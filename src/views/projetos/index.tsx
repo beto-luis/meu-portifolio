@@ -305,16 +305,18 @@ export function MeusProjetos() {
         </Heading>
       </Flex>
 
-      <Tabs isFitted variant='enclosed' w={'full'}>
+      <Tabs isFitted variant='enclosed' w={'80%'}>
         <TabList mb='20px'>
-          <Tab color={'green'}>One</Tab>
+          <Tab color={'green'}>App Expenses</Tab>
           <Tab color={'green'}>Two</Tab>
           <Tab color={'green'}>Tre</Tab>
           <Tab color={'green'}>Four</Tab>
         </TabList>
         <TabPanels>
           <TabPanel>
-            <p>one!</p>
+            <Flex>
+              
+            </Flex>
           </TabPanel>
           <TabPanel>
             <p>two!</p>

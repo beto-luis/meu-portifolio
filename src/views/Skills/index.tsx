@@ -74,7 +74,7 @@ export default function Skills() {
             boxShadow={'lg'}
             rounded={'md'}
             overflow={'hidden'}>
-                <Link target='_blank' href='' >
+                <Link target='_blank' href='https://storage-certificated.s3.sa-east-1.amazonaws.com/Certificado+DEV+QUEST.pdf' >
                 <Image rounded={'md'} h={'100'} src='dev-em-dobro.png'/>
                 </Link>
             </Flex>
