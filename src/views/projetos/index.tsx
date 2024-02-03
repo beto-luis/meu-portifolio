@@ -15,6 +15,7 @@ import {
   TabPanel,
 } from '@chakra-ui/react'
 import { Link } from '@chakra-ui/react'
+import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 export function MeusProjetos() {
   return (
@@ -79,6 +80,9 @@ export function MeusProjetos() {
                   <br />
                   Por mais que sua funcionalidade seja simples, foi um excelente desafio para elevar meu nível de conhecimento.</Text>
               </Stack>
+              <Link mt={'5'} href='https://github.com/beto-luis/projeto-fetch-github-api' isExternal color={'green'}>
+                  Link do repositório <ExternalLinkIcon mx='2px' color={'green'} />
+                </Link>
             </Box>
           </Flex>
 
@@ -96,7 +100,7 @@ export function MeusProjetos() {
                 <Image
                   position={'relative'}
                   objectFit='cover'
-                  h={''}
+                  h={'full'}
                   src={'landing-page.png'}
                   _before={{
                     position: 'absolute',
@@ -123,6 +127,9 @@ export function MeusProjetos() {
                   <br />
                   A responsividade foi o principal foco no desenvolvimento desse projeto e também o maior desafio.
                 </Text>
+                <Link mt={'5'} href='https://github.com/beto-luis/landing-page-com-grid-e-flex' isExternal color={'green'}>
+                  Link do repositório <ExternalLinkIcon mx='2px' color={'green'} />
+                </Link>
               </Stack>
             </Box>
           </Flex>
@@ -141,7 +148,7 @@ export function MeusProjetos() {
                 <Image
                   position={'relative'}
                   objectFit='cover'
-                  h={''}
+                  h={'full'}
                   src={'formulario.png'}
                   _before={{
                     position: 'absolute',
@@ -168,6 +175,9 @@ export function MeusProjetos() {
                   <br />
                   Explorei as diversas formas de posicionar os elementos em uma página, tentando sempre manter a boa prática do código limpo.
                 </Text>
+                <Link mt={'5'} href='https://github.com/beto-luis/Quest-JS-intermediario' isExternal color={'green'}>
+                  Link do repositório <ExternalLinkIcon mx='2px' color={'green'} />
+                </Link>
               </Stack>
             </Box>
           </Flex>
@@ -222,11 +232,14 @@ export function MeusProjetos() {
                 <Text fontFamily={'poppins'} fontSize={'16'} color={useColorModeValue('gray.600', 'gray.300')} mt={'5'}>Landing page feita com HTML e CSS, desafio do FrontEnd Mentor.
                   <br />
                   <br />
-                  Foi construido para colocar em prática o conhecimento que havia adquirido até o momento como treinamento pessoal.
+                  Foi construido para colocar em prática o conhecimento adquirido até o momento, desenvolvi como treinamento pessoal.
                   <br />
                   <br />
                   Responsivo e com boas práticas de codificação.
                 </Text>
+                <Link mt={'5'} href='https://github.com/beto-luis/Huddle-landing-page' isExternal color={'green'}>
+                  Link do repositório <ExternalLinkIcon mx='2px' color={'green'} />
+                </Link>
               </Stack>
             </Box>
           </Flex>
@@ -273,7 +286,7 @@ export function MeusProjetos() {
               </Link>
             </Flex>
 
-            <Box p={6} textAlign={'left'} maxW={400}>
+            <Box p={6} textAlign={'left'} maxW={'auto'}>
               <Stack spacing={0}>
                 <Heading fontSize={'20'} fontWeight={500} fontFamily={'poppins'}>
                   Projeto Mario
@@ -286,26 +299,30 @@ export function MeusProjetos() {
                   <br />
                   Explorei as diversas formas de posicionar os elementos em uma página, tentando sempre manter a boa prática do código limpo.
                 </Text>
+                <Link mt={'5'} href='https://github.com/beto-luis/projeto-mario' isExternal color={'green'}>
+                  Link do repositório <ExternalLinkIcon mx='2px' color={'green'} />
+                </Link>
               </Stack>
             </Box>
           </Flex>
         </Center>
       </SimpleGrid>
 
-      <Flex rounded={'full'} alignItems={'center'} h={120} mx={'10'} mb={'10'} bg={useColorModeValue('green.100', 'green.600')}>
-        <Heading textAlign={'left'}
-          mx={'40'}
+      <Flex rounded={'full'} alignItems={'center'} w={800} h={'auto'} mb={'10'} bg={useColorModeValue('green.100', 'green.600')}>
+        <Heading textAlign={'center'}
+          p={'8'}
+          mx={'auto'}
           fontSize={20}
           fontFamily={'Poppins'}
           fontWeight={'bold'}
           color={useColorModeValue('gray.700', 'gray.50')}>
-          Nessa seção eu estarei apresentando os projetos mobile que desenvolvi durante meu aprendizado em Flutter.
-          <br />
+          Aqui estão algumas das minhas práticas em Dart como linguagem de programação e o framework Flutter para a interface de usuário.
+          <br /><br />
           Eles estão disponiveis também para download, fique a vontade para experimentar suas funcionalidades na prática!
         </Heading>
-      </Flex>
+      </Flex >
 
-      <Tabs isFitted variant='enclosed' w={'80%'}>
+      <Tabs isFitted variant='enclosed' w={'90%'} >
         <TabList mb='20px'>
           <Tab color={'green'}>App Expenses</Tab>
           <Tab color={'green'}>Two</Tab>
@@ -314,15 +331,93 @@ export function MeusProjetos() {
         </TabList>
         <TabPanels>
           <TabPanel>
-            <Flex>
-              
+            <Flex gap={5}>
+              <Image
+                position={'relative'}
+                objectFit='cover'
+                rounded={'md'}
+                h={'400'}
+                src={'expenses.png'}
+              />
+              <Image
+                position={'relative'}
+                objectFit='cover'
+                rounded={'md'}
+                h={'400'}
+                src={'expenses-2.png'}
+              />
+              <Flex ml={'15'} direction={'column'} color={useColorModeValue('gray.700', 'gray.50')} bg={useColorModeValue('green.100', 'green.600')} p={'8'} rounded={'md'}>
+                <Heading mb={'5'} textAlign={'center'} fontFamily={'poppins'}>
+                  App Despesas Pessoais
+                </Heading>
+                <Text textAlign={'left'} fontFamily={'poppins'}>
+                  Este projeto consiste a utilização de boas práticas de programação garantindo a separação clara das responsabilidades, utilizei widgets do Flutter de forma reutilizável, promovendo a consistência visual em todo o aplicativo.
+                  Implementei uma interface para visualização e edição das despesas cadastradas, proporcionando uma experiência completa ao usuário.
+                  Uma funcionalidade destacada é a geração de um gráfico que ilustra o percentual dos valores gastos nos diferentes dias da semana.
+                  Isso oferece uma análise visual e rápida dos padrões de gastos.
+                </Text>
+              </Flex>
             </Flex>
           </TabPanel>
           <TabPanel>
-            <p>two!</p>
+            <Flex gap={5}>
+              <Image
+                position={'relative'}
+                objectFit='cover'
+                rounded={'md'}
+                h={'400'}
+                src={'meals.png'}
+              />
+              <Image
+                position={'relative'}
+                objectFit='cover'
+                rounded={'md'}
+                h={'400'}
+                src={'meals-2.png'}
+              />
+              <Flex ml={'15'} direction={'column'} color={useColorModeValue('gray.700', 'gray.50')} bg={useColorModeValue('green.100', 'green.600')} p={'8'} rounded={'md'}>
+                <Heading mb={'5'} textAlign={'center'} fontFamily={'poppins'}>
+                  App Meals
+                </Heading>
+                <Text textAlign={'left'} fontFamily={'poppins'}>
+                  Um app de receitas com a funcionalidade de separar as categorias, tempo, dificuldade e valores sobre o conteúdo da aplicação.
+                  Neste app dinâmico teve como foco a implementação de múltiplas telas de navegação para garantir uma experiência fluida e organizada.
+                  Utilização de rotas nomeadas para facilitar o acesso às diferentes seções do aplicativo.
+                  Também inclui a adição de um drawer personalizado e dinâmico.
+                  Uma boa organização das pastas para e dos componentes para facilitar atualização e colaborações futuras.
+                </Text>
+              </Flex>
+            </Flex>
           </TabPanel>
           <TabPanel>
-            <p>tre!</p>
+            <Flex gap={5}>
+              <Image
+                position={'relative'}
+                objectFit='cover'
+                rounded={'md'}
+                h={'400'}
+                src={'shop.png'}
+              />
+              <Image
+                position={'relative'}
+                objectFit='cover'
+                rounded={'md'}
+                h={'400'}
+                src={'shop-2.png'}
+              />
+              <Flex ml={'15'} direction={'column'} color={useColorModeValue('gray.700', 'gray.50')} bg={useColorModeValue('green.100', 'green.600')} p={'8'} rounded={'md'}>
+                <Heading mb={'5'} textAlign={'center'} fontFamily={'poppins'}>
+                  App Minha Loja
+                </Heading>
+                <Text textAlign={'left'} fontFamily={'poppins'}>
+                  Um app de receitas com a funcionalidade de separar as categorias, tempo, dificuldade e valores sobre o conteúdo da aplicação.
+                  Neste app dinâmico teve como foco a implementação de múltiplas telas de navegação para garantir uma experiência fluida e organizada.
+                  Utilização de rotas nomeadas para facilitar o acesso às diferentes seções do aplicativo.
+                  Também inclui a adição de um drawer personalizado e dinâmico.
+                  Uma boa organização das pastas para e dos componentes para facilitar atualização e colaborações futuras.
+                </Text>
+              </Flex>
+            </Flex>
           </TabPanel>
           <TabPanel>
             <p>Four!</p>
