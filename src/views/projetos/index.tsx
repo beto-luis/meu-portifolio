@@ -49,11 +49,11 @@ export function MeusProjetos() {
             overflow={'hidden'}
             mb={'20'}>
             <Flex justify={'center'}>
-              <Link target='_Blank' as={'a'} href={'https://github.com/beto-luis/projeto-fetch-github-api'} variant='custom'>
+              <Link target='_Blank' as={'a'} href={'https://main--fluffy-praline-f37cd8.netlify.app/'} variant='custom'>
                 <Image
                   position={'relative'}
                   objectFit='cover'
-                  h={'100%'}
+                  h={''}
                   src={'fetch-github.png'}
                   _after={{
                     position: 'absolute',
@@ -81,8 +81,8 @@ export function MeusProjetos() {
                   Por mais que sua funcionalidade seja simples, foi um excelente desafio para elevar meu nível de conhecimento.</Text>
               </Stack>
               <Link mt={'5'} href='https://github.com/beto-luis/projeto-fetch-github-api' isExternal color={'green'}>
-                  Link do repositório <ExternalLinkIcon mx='2px' color={'green'} />
-                </Link>
+                Link do repositório <ExternalLinkIcon mx='2px' color={'green'} />
+              </Link>
             </Box>
           </Flex>
 
@@ -322,12 +322,11 @@ export function MeusProjetos() {
         </Heading>
       </Flex >
 
-      <Tabs isFitted variant='enclosed' w={'90%'} >
+      <Tabs isFitted variant='enclosed' w={'90%'} my={'40px'} >
         <TabList mb='20px'>
           <Tab color={'green'}>App Expenses</Tab>
-          <Tab color={'green'}>Two</Tab>
-          <Tab color={'green'}>Tre</Tab>
-          <Tab color={'green'}>Four</Tab>
+          <Tab color={'green'}>App Meals</Tab>
+          <Tab color={'green'}>App Shop</Tab>
         </TabList>
         <TabPanels>
           <TabPanel>
@@ -351,11 +350,14 @@ export function MeusProjetos() {
                   App Despesas Pessoais
                 </Heading>
                 <Text textAlign={'left'} fontFamily={'poppins'}>
-                  Este projeto consiste a utilização de boas práticas de programação garantindo a separação clara das responsabilidades, utilizei widgets do Flutter de forma reutilizável, promovendo a consistência visual em todo o aplicativo.
+                  Este projeto consiste na utilização de boas práticas de programação garantindo a separação clara das responsabilidades, utilizei widgets do Flutter de forma reutilizável, promovendo a consistência visual em todo o aplicativo.
                   Implementei uma interface para visualização e edição das despesas cadastradas, proporcionando uma experiência completa ao usuário.
                   Uma funcionalidade destacada é a geração de um gráfico que ilustra o percentual dos valores gastos nos diferentes dias da semana.
                   Isso oferece uma análise visual e rápida dos padrões de gastos.
                 </Text>
+                <Link href='https://chakra-ui.com' mt={'auto'} fontWeight={'bold'} color={useColorModeValue('pink.400', 'pink.100')}>
+                  Download do App <ExternalLinkIcon mx='2px' />
+                </Link>
               </Flex>
             </Flex>
           </TabPanel>
@@ -386,6 +388,9 @@ export function MeusProjetos() {
                   Também inclui a adição de um drawer personalizado e dinâmico.
                   Uma boa organização das pastas para e dos componentes para facilitar atualização e colaborações futuras.
                 </Text>
+                <Link href='https://chakra-ui.com' mt={'auto'} fontWeight={'bold'} color={useColorModeValue('pink.400', 'pink.100')} >
+                Download do App <ExternalLinkIcon mx='2px' />
+                </Link>
               </Flex>
             </Flex>
           </TabPanel>
@@ -410,17 +415,16 @@ export function MeusProjetos() {
                   App Minha Loja
                 </Heading>
                 <Text textAlign={'left'} fontFamily={'poppins'}>
-                  Um app de receitas com a funcionalidade de separar as categorias, tempo, dificuldade e valores sobre o conteúdo da aplicação.
-                  Neste app dinâmico teve como foco a implementação de múltiplas telas de navegação para garantir uma experiência fluida e organizada.
-                  Utilização de rotas nomeadas para facilitar o acesso às diferentes seções do aplicativo.
-                  Também inclui a adição de um drawer personalizado e dinâmico.
-                  Uma boa organização das pastas para e dos componentes para facilitar atualização e colaborações futuras.
+                  Este projeto que app simula um site de compras, com seções para as informações dos produtos e o métodos para favoritar e adicionar itens ao carrinho de compras.
+                  Neste projeto utilizei o provider como gerenciador de estado, também procura extender o conhecimento na utilização de widgets e padrões visuais.
+                  É possivel notar uma organização e complexidade maior na construção deste app.
                 </Text>
+                <br />
+                <Link href='https://chakra-ui.com' mt={'auto'} fontWeight={'bold'} color={useColorModeValue('pink.400', 'pink.100')}>
+                Download do App <ExternalLinkIcon mx='2px' />
+                </Link>
               </Flex>
             </Flex>
-          </TabPanel>
-          <TabPanel>
-            <p>Four!</p>
           </TabPanel>
         </TabPanels>
       </Tabs>
