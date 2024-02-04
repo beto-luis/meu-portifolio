@@ -1,6 +1,7 @@
 import { Header } from "@/layout/header";
 import { Footer } from "@/layout/footer";
-import Skills from "@/views/skills";
+import { Skills } from "@/views/skills";
+
 
 function skillsPage() {
   

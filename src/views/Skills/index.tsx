@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/react'
 import { Link } from '@chakra-ui/react'
 
-export default function Skills() {
+export function Skills() {
   return (
     <Container maxW={'8xl'} py={12} position={'relative'}>
       <SimpleGrid mt={'20'} columns={{ base: 1, md: 2 }} spacing={5}>
