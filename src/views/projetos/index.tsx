@@ -55,6 +55,7 @@ export function MeusProjetos() {
                   objectFit='cover'
                   h={''}
                   src={'fetch-github.png'}
+                  alt='ilustração'
                   _after={{
                     position: 'absolute',
                     transition: '0.2s',
@@ -102,6 +103,7 @@ export function MeusProjetos() {
                   objectFit='cover'
                   h={'full'}
                   src={'landing-page.png'}
+                  alt='ilustração'
                   _before={{
                     position: 'absolute',
                     transition: '0.2s',
@@ -150,6 +152,7 @@ export function MeusProjetos() {
                   objectFit='cover'
                   h={'full'}
                   src={'formulario.png'}
+                  alt='ilustração'
                   _before={{
                     position: 'absolute',
                     transition: '0.2s',
@@ -198,6 +201,7 @@ export function MeusProjetos() {
                   objectFit='cover'
                   h={''}
                   src={'huddle.png'}
+                  alt='ilustração'
                   _before={{
                     position: 'absolute',
                     transition: '0.2s',
@@ -212,6 +216,7 @@ export function MeusProjetos() {
                   objectFit='cover'
                   h={''}
                   src={'huddle-2.png'}
+                  alt='ilustração'
                   _before={{
                     position: 'absolute',
                     transition: '0.2s',
@@ -260,6 +265,7 @@ export function MeusProjetos() {
                   objectFit='cover'
                   h={''}
                   src={'projeto-mario.png'}
+                  alt='ilustração'
                   _before={{
                     position: 'absolute',
                     transition: '0.2s',
@@ -274,6 +280,7 @@ export function MeusProjetos() {
                   objectFit='cover'
                   h={''}
                   src={'projeto-mario-tr.png'}
+                  alt='ilustração'
                   _before={{
                     position: 'absolute',
                     transition: '0.2s',
@@ -337,6 +344,7 @@ export function MeusProjetos() {
                 rounded={'md'}
                 h={'400'}
                 src={'expenses.png'}
+                alt='ilustração'
               />
               <Image
                 position={'relative'}
@@ -344,6 +352,7 @@ export function MeusProjetos() {
                 rounded={'md'}
                 h={'400'}
                 src={'expenses-2.png'}
+                alt='ilustração'
               />
               <Flex ml={'15'} direction={'column'} color={useColorModeValue('gray.700', 'gray.50')} bg={useColorModeValue('green.100', 'green.600')} p={'8'} rounded={'md'}>
                 <Heading mb={'5'} textAlign={'center'} fontFamily={'poppins'}>
@@ -369,6 +378,7 @@ export function MeusProjetos() {
                 rounded={'md'}
                 h={'400'}
                 src={'meals.png'}
+                alt='ilustração'
               />
               <Image
                 position={'relative'}
@@ -376,6 +386,7 @@ export function MeusProjetos() {
                 rounded={'md'}
                 h={'400'}
                 src={'meals-2.png'}
+                alt='ilustração'
               />
               <Flex ml={'15'} direction={'column'} color={useColorModeValue('gray.700', 'gray.50')} bg={useColorModeValue('green.100', 'green.600')} p={'8'} rounded={'md'}>
                 <Heading mb={'5'} textAlign={'center'} fontFamily={'poppins'}>
@@ -402,6 +413,7 @@ export function MeusProjetos() {
                 rounded={'md'}
                 h={'400'}
                 src={'shop.png'}
+                alt='ilustração'
               />
               <Image
                 position={'relative'}
@@ -409,6 +421,7 @@ export function MeusProjetos() {
                 rounded={'md'}
                 h={'400'}
                 src={'shop-2.png'}
+                alt='ilustração'
               />
               <Flex ml={'15'} direction={'column'} color={useColorModeValue('gray.700', 'gray.50')} bg={useColorModeValue('green.100', 'green.600')} p={'8'} rounded={'md'}>
                 <Heading mb={'5'} textAlign={'center'} fontFamily={'poppins'}>
