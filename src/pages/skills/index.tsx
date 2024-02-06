@@ -4,10 +4,10 @@ import { Skills } from "@/views/skills";
 
 
 function skillsPage() {
-  
+
   return (
     <div>
-      <Header />  
+      <Header />
       <Skills />
       <Footer />
     </div>
