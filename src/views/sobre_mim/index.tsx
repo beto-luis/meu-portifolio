@@ -13,7 +13,6 @@ import {
   chakra,
   Image,
 } from '@chakra-ui/react'
-import  Head  from 'next/head'
 import { ReactNode } from 'react'
 import { FaGithub, FaLinkedin, FaWhatsapp, } from 'react-icons/fa'
 import { Divider } from '@chakra-ui/react'
