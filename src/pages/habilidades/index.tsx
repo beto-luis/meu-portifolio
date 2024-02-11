@@ -1,17 +1,17 @@
 import { Header } from "@/layout/header";
 import { Footer } from "@/layout/footer";
-import { Skills } from "@/views/skills";
+import { Habilidades } from "@/views/habilidades";
 
 
-function skillsPage() {
+function habilidadesPage() {
 
   return (
     <div>
       <Header />
-      <Skills />
+      <Habilidades />
       <Footer />
     </div>
   );
 }
 
-export default skillsPage;
+export default habilidadesPage;
