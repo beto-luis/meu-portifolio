@@ -11,8 +11,6 @@ import {
 } from '@chakra-ui/react'
 import { Link } from '@chakra-ui/react'
 
-
-
 export function Skills() {
   return (
     <Container maxW={'8xl'} py={12} position={'relative'}>
