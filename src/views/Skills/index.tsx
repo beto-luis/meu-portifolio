@@ -8,7 +8,6 @@ import {
   Stack,
   StackDivider,
   useColorModeValue,
-  Spacer,
 } from '@chakra-ui/react'
 import { Link } from '@chakra-ui/react'
 
