@@ -129,9 +129,9 @@ export function SobreMim() {
               bg={'green.300'}
               _hover={{ bg: 'green.700' }}
               as={'a'}
-              href='/skills'
+              href='/habilidades'
               target='_blank'>
-              Skills
+              Habilidades
             </Button>
           </Stack>
         </Stack>

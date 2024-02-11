@@ -41,8 +41,8 @@ export function Header() {
                             </Button>
                             <Button as={'a'} _hover={{
                                 bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
-                            }} variant='ghost' href='/skills'>
-                                Skills
+                            }} variant='ghost' href='/habilidades'>
+                                Habilidades
                             </Button>
                         </Flex>
                     </Flex>
