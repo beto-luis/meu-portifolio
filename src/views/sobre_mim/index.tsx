@@ -114,8 +114,24 @@ export function SobreMim() {
               px={6}
               colorScheme={'red'}
               bg={'green.300'}
-              _hover={{ bg: 'green.700' }}>
-              Get started
+              _hover={{ bg: 'green.700' }}
+              as={'a'}
+              href='/projetos'
+              target='_blank'>
+              Projetos
+            </Button>
+            <Button
+              rounded={'full'}
+              size={'lg'}
+              fontWeight={'normal'}
+              px={6}
+              colorScheme={'red'}
+              bg={'green.300'}
+              _hover={{ bg: 'green.700' }}
+              as={'a'}
+              href='/skills'
+              target='_blank'>
+              Skills
             </Button>
           </Stack>
         </Stack>

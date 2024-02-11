@@ -31,6 +31,7 @@ export function Skills() {
               Badges AWS
             </Text>
             <Flex
+              p={'3'}
               justify={'space-evenly'}
               maxW={'auto'}
               bg={useColorModeValue('gray.50', 'gray.900')}
@@ -63,7 +64,7 @@ export function Skills() {
               rounded={'md'}
               overflow={'hidden'}>
               <Link target='_blank' as={'a'} href='https://www.udemy.com/certificate/UC-936ceef2-818f-4e49-bf50-e7e72a1483a4/'>
-                <Image rounded={'md'} h={'100'} src='Flutter.jpg' alt='Flutter' />
+                <Image m={'5'} rounded={'md'} h={'100'} src='Flutter.jpg' alt='Flutter' />
               </Link>
             </Flex>
             <Text mt={'10'} textAlign={'center'} fontWeight={'bold'} color={useColorModeValue('green.700', 'green.200')} fontSize={'lg'}>
@@ -78,7 +79,7 @@ export function Skills() {
               rounded={'md'}
               overflow={'hidden'}>
               <Link target='_blank' href='https://storage-certificated.s3.sa-east-1.amazonaws.com/Certificado+DEV+QUEST.pdf' >
-                <Image rounded={'md'} h={'100'} src='dev-em-dobro.png' alt='Certificado' />
+                <Image m={'5'} rounded={'md'} h={'100'} src='dev-em-dobro.png' alt='Certificado' />
               </Link>
             </Flex>
           </Stack>

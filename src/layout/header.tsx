@@ -22,13 +22,13 @@ export function Header() {
                 bg={useColorModeValue('gray.50', 'gray.900',)}
                 color={useColorModeValue('gray.700', 'gray.200')}
                 px={4}>
-                <Flex alignItems={'center'}
+                <Flex maxW={'100%'} alignItems={'center'}
                     justifyContent={'space-between'}>
                     <Flex w="100%" gap="3" p="5" direction="row" align="center" >
-                        <Heading fontSize={25} >Roberto Carvalho /</Heading>
-                        <Text fontSize={25} fontWeight={300}>Dev Frontend</Text>
+                        <Heading fontSize={{ base : "16px" , md : "20px" , lg : "25px" }} >Roberto Carvalho /</Heading>
+                        <Text fontSize={{ base : "16px" , md : "20px" , lg : "25px" }} fontWeight={300}>Dev Frontend</Text>
                         <Spacer />
-                        <Flex gap="5">
+                        <Flex gap="5" >
                             <Button as={'a'} _hover={{
                                 bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
                             }} variant='ghost' href='/'>

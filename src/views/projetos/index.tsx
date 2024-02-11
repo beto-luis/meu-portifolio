@@ -27,15 +27,47 @@ export function MeusProjetos() {
       direction={'column'}
       width={'100%'}
       overflow={'hidden'}>
-      <Box w={800} rounded={'full'} h={100} mt={'14'} bg={useColorModeValue('green.100', 'green.600')}>
+      <Box justifyContent={'center'}>
+        <Flex
+        justifyContent={'center'}
+        alignItems={'center'}
+        maxW={800} 
+        rounded={'full'}
+        boxShadow={'lg'} 
+        h={100} 
+        mt={'14'} 
+        bg={useColorModeValue('green.100', 'green.600')}>
         <Heading
           my={'6'}
-          fontSize={40}
+          fontSize={{ base : "16px" , md : "30px" , lg : "40px" }}
           fontFamily={'Poppins'}
           fontWeight={'bold'}
           color={useColorModeValue('gray.700', 'gray.50')}>
           Fique um pouco e explore!
         </Heading>
+        </Flex>
+        <Flex 
+        justifyContent={'center'}
+        alignItems={'center'}
+        maxW={800} 
+        rounded={'full'} 
+        boxShadow={'lg'}
+        h={'auto'} 
+        mt={'14'} 
+        bg={useColorModeValue('green.100', 'green.600')}>
+        <Text 
+          my={'6'}
+          fontSize={{ base : "8px" , md : "12px" , lg : "16px" }}
+          fontFamily={'Poppins'}
+          fontWeight={'bold'}
+          color={useColorModeValue('gray.700', 'gray.50')}>
+        Aqui encontran-se alguns dos meus projetos com diferentes funcionalidades que foram desenvolvidos durante meu aprendizado em programação.
+        <br/>
+        Caso deseje ver outros projetos, visite meu repositório clicando aqui <Link href='https://github.com/beto-luis/projeto-fetch-github-api' isExternal color={useColorModeValue('pink.400', 'pink.200')}>
+                Link do repositório <ExternalLinkIcon mx='2px' color={useColorModeValue('pink.400', 'pink.200')} />
+              </Link>
+        </Text>
+        </Flex>
       </Box>
       <SimpleGrid columns={{ base: 1 }} spacing={'20'} mt={16} mb={16} mx={'auto'}>
         <Center py={5} flexDirection={'column'}>
@@ -73,7 +105,7 @@ export function MeusProjetos() {
                 <Heading fontSize={'20'} fontWeight={500} fontFamily={'poppins'}>
                   Buscador de Usuários do GitHub
                 </Heading>
-                <Text fontFamily={'poppins'} fontSize={'16'} color={useColorModeValue('gray.600', 'gray.300')} mt={'5'}>Esse projeto foi feito com HTML, CSS e JavaScript. Nele eu pude colocar em prática meu aprendizado até o momento.
+                <Text mb={'5'} fontFamily={'poppins'} fontSize={'16'} color={useColorModeValue('gray.600', 'gray.300')} mt={'5'}>Esse projeto foi feito com HTML, CSS e JavaScript. Nele eu pude colocar em prática meu aprendizado até o momento.
                   <br />
                   <br />
                   Aproveitei também para testar meu conhecimento em consumo de API`s e leitura de documentação.
@@ -81,7 +113,7 @@ export function MeusProjetos() {
                   <br />
                   Por mais que sua funcionalidade seja simples, foi um excelente desafio para elevar meu nível de conhecimento.</Text>
               </Stack>
-              <Link mt={'5'} href='https://github.com/beto-luis/projeto-fetch-github-api' isExternal color={'green'}>
+              <Link href='https://github.com/beto-luis/projeto-fetch-github-api' isExternal color={'green'}>
                 Link do repositório <ExternalLinkIcon mx='2px' color={'green'} />
               </Link>
             </Box>
@@ -364,7 +396,7 @@ export function MeusProjetos() {
                   Uma funcionalidade destacada é a geração de um gráfico que ilustra o percentual dos valores gastos nos diferentes dias da semana.
                   Isso oferece uma análise visual e rápida dos padrões de gastos.
                 </Text>
-                <Link href='https://chakra-ui.com' mt={'auto'} fontWeight={'bold'} color={useColorModeValue('pink.400', 'pink.100')}>
+                <Link href='https://storage-apps-flutter.s3.sa-east-1.amazonaws.com/app-expenses.apk' mt={'auto'} fontWeight={'bold'} color={useColorModeValue('pink.400', 'pink.200')}>
                   Download do App <ExternalLinkIcon mx='2px' />
                 </Link>
               </Flex>
@@ -399,8 +431,8 @@ export function MeusProjetos() {
                   Também inclui a adição de um drawer personalizado e dinâmico.
                   Uma boa organização das pastas para e dos componentes para facilitar atualização e colaborações futuras.
                 </Text>
-                <Link href='https://chakra-ui.com' mt={'auto'} fontWeight={'bold'} color={useColorModeValue('pink.400', 'pink.100')} >
-                Download do App <ExternalLinkIcon mx='2px' />
+                <Link href='https://storage-apps-flutter.s3.sa-east-1.amazonaws.com/app-meals.apk' mt={'auto'} fontWeight={'bold'} color={useColorModeValue('pink.400', 'pink.200')} >
+                  Download do App <ExternalLinkIcon mx='2px' />
                 </Link>
               </Flex>
             </Flex>
@@ -433,8 +465,8 @@ export function MeusProjetos() {
                   É possivel notar uma organização e complexidade maior na construção deste app.
                 </Text>
                 <br />
-                <Link href='https://chakra-ui.com' mt={'auto'} fontWeight={'bold'} color={useColorModeValue('pink.400', 'pink.100')}>
-                Download do App <ExternalLinkIcon mx='2px' />
+                <Link href='https://storage-apps-flutter.s3.sa-east-1.amazonaws.com/app-shop.apk' mt={'auto'} fontWeight={'bold'} color={useColorModeValue('pink.400', 'pink.200')}>
+                  Download do App <ExternalLinkIcon mx='2px' />
                 </Link>
               </Flex>
             </Flex>
