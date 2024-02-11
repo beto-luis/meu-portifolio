@@ -6,6 +6,7 @@ import {
   Text,
   useColorModeValue,
   VisuallyHidden,
+  Image,
 } from '@chakra-ui/react'
 import { FaGithub, FaLinkedin, FaWhatsapp, } from 'react-icons/fa'
 import { ReactNode } from 'react'
@@ -71,6 +72,9 @@ export function Footer() {
             <SocialButton label={'Github'} href={'https://github.com/beto-luis'}>
               <FaGithub />
             </SocialButton>
+            <SocialButton label={'Credly'} href={'https://www.credly.com/users/roberto-carvalho.4cb53c6e'}>
+                  <Image stroke={'currentColor'} fill={'currentcolor'} stroke-width={'0'} height={'1em'} width={'1em'}src='credly-svgrepo-com.svg' />
+                </SocialButton>
           </Stack>
         </Container>
       </Box>

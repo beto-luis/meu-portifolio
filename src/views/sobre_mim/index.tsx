@@ -11,6 +11,7 @@ import {
   Center,
   VisuallyHidden,
   chakra,
+  Image,
 } from '@chakra-ui/react'
 import { ReactNode } from 'react'
 import { FaGithub, FaLinkedin, FaWhatsapp, } from 'react-icons/fa'
@@ -180,6 +181,9 @@ export function SobreMim() {
                 </SocialButton>
                 <SocialButton label={'Github'} href={'https://github.com/beto-luis'}>
                   <FaGithub />
+                </SocialButton>
+                <SocialButton label={'Credly'} href={'https://www.credly.com/users/roberto-carvalho.4cb53c6e'}>
+                  <Image stroke={'currentColor'} fill={'currentcolor'} stroke-width={'0'} height={'1em'} width={'1em'}src='credly-svgrepo-com.svg' />
                 </SocialButton>
               </Stack>
             </Box>

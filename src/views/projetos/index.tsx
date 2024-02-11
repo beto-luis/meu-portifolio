@@ -348,14 +348,16 @@ export function MeusProjetos() {
       </SimpleGrid>
 
       <Flex rounded={'full'} alignItems={'center'} w={800} h={'auto'} mb={'10'} bg={useColorModeValue('green.100', 'green.600')}>
-        <Heading textAlign={'center'}
-          p={'8'}
+        <Heading 
+          py={'8'}
           mx={'auto'}
           fontSize={20}
           fontFamily={'Poppins'}
           fontWeight={'bold'}
           color={useColorModeValue('gray.700', 'gray.50')}>
           Aqui estão algumas das minhas práticas em Dart como linguagem de programação e o framework Flutter para a interface de usuário.
+          <br /><br />
+          Os aplicativos estão buildados para android, mesmo que em sua construção no código eles também já estão preparados para rodar em ios.
           <br /><br />
           Eles estão disponiveis também para download, fique a vontade para experimentar suas funcionalidades na prática!
         </Heading>
