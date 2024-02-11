@@ -36,7 +36,7 @@ export function MeusProjetos() {
         boxShadow={'lg'} 
         h={100} 
         mt={'14'} 
-        bg={useColorModeValue('green.100', 'green.600')}>
+        bg={useColorModeValue('gray.50', 'gray.900')}>
         <Heading
           my={'6'}
           fontSize={{ base : "16px" , md : "30px" , lg : "40px" }}
@@ -61,9 +61,9 @@ export function MeusProjetos() {
           fontFamily={'Poppins'}
           fontWeight={'bold'}
           color={useColorModeValue('gray.700', 'gray.50')}>
-        Aqui encontran-se alguns dos meus projetos com diferentes funcionalidades que foram desenvolvidos durante meu aprendizado em programação.
+        Aqui encontram-se alguns dos meus projetos com diferentes funcionalidades que foram desenvolvidos durante meu aprendizado em programação.
         <br/>
-        Caso deseje ver outros projetos, visite meu repositório clicando aqui <Link href='https://github.com/beto-luis/projeto-fetch-github-api' isExternal color={useColorModeValue('pink.400', 'pink.200')}>
+        Caso deseje ver outros projetos, visite meu repositório clicando aqui <Link href='https://github.com/beto-luis?tab=repositories' isExternal color={useColorModeValue('pink.400', 'pink.200')}>
                 Link do repositório <ExternalLinkIcon mx='2px' color={useColorModeValue('pink.400', 'pink.200')} />
               </Link>
         </Text>

@@ -1,2 +1,9 @@
-import {  } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 
+export function sobreEstePortifolio() {
+    return (
+        <Flex>
+            
+        </Flex>
+    )
+}

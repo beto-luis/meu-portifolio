@@ -8,8 +8,11 @@ import {
   Stack,
   StackDivider,
   useColorModeValue,
+  Spacer,
 } from '@chakra-ui/react'
 import { Link } from '@chakra-ui/react'
+
+
 
 export function Skills() {
   return (
@@ -51,6 +54,21 @@ export function Skills() {
               <Link target='_blank' href='https://www.credly.com/badges/25736ef7-2b6c-46db-826e-a30a452fb3a4/public_url' >
                 <Image h={'100'} src='aws-cloud-quest-solutions-architect.png' alt='Cloud solutions' />
               </Link>
+            </Flex>
+            <Text mt={'10'} justifyContent={'center'} textAlign={'center'} fontWeight={'bold'} color={useColorModeValue('green.700', 'green.200')} fontSize={'lg'}>
+              Badges AWS em andamento
+            </Text>
+            <Flex
+              p={'3'}
+              justify={'space-evenly'}
+              maxW={'auto'}
+              bg={useColorModeValue('gray.50', 'gray.900')}
+              color={useColorModeValue('gray.700', 'gray.200')}
+              boxShadow={'lg'}
+              rounded={'md'}
+              overflow={'hidden'}>
+              <Image h={'100'} src='aws-knowledge-architecting.png' alt='Cloud essentials' filter={'grayscale(100%)'} />
+              <Image h={'100'} src='aws-certified-solutions-architect-associate.png' alt='Cloud practitioner' filter={'grayscale(100%)'} />  
             </Flex>
             <Text mt={'10'} textAlign={'center'} fontWeight={'bold'} color={useColorModeValue('green.700', 'green.200')} fontSize={'lg'}>
               Certificado Flutter
