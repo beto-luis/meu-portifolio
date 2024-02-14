@@ -73,7 +73,7 @@ export function Footer() {
               <FaGithub />
             </SocialButton>
             <SocialButton label={'Credly'} href={'https://www.credly.com/users/roberto-carvalho.4cb53c6e'}>
-                  <Image stroke={'currentColor'} fill={'currentcolor'} stroke-width={'0'} height={'1em'} width={'1em'}src='credly-svgrepo-com.svg' />
+                  <Image stroke={'currentColor'} fill={'currentcolor'} stroke-width={'0'} height={'1em'} width={'1em'}src='credly-svgrepo-com.svg' alt={'credly'} />
                 </SocialButton>
           </Stack>
         </Container>
