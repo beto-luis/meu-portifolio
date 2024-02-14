@@ -123,7 +123,7 @@ export function Habilidades() {
             <br />
             Destacando ainda mais a diversidade de minhas habilidades, utilizei a Vercel, criadora do framework Next.js, como o host principal para o meu portfólio. Isso não apenas demonstrou a versatilidade do Next.js, mas também refletiu meu compromisso em explorar e aproveitar as melhores ferramentas disponíveis.
             <br />
-            Além disso, como parte da aplicação prática do meu aprendizado com AWS, adotei os buckets do Amazon S3. Essa escolha estratégica permitiu o armazenamento eficiente de meus aplicativos Flutter e da imagem do certificado de conclusão do curso de front-end.
+            Além disso, como parte da aplicação prática do meu aprendizado com AWS, adotei os buckets do Amazon S3. Essa escolha estratégica permitiu o armazenamento eficiente dos arquivos .apk de meus aplicativos Flutter e da imagem do certificado de conclusão do curso de front-end.
             <br />
             Meu portfólio não é apenas uma vitrine digital, mas uma narrativa do meu compromisso com a aprendizagem contínua e a aplicação prática de habilidades tecnológicas diversas.
           </Text>
