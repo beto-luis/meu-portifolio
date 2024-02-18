@@ -54,8 +54,8 @@ const SocialButton = ({
 export function SobreMim() {
   return (
       <Container maxW={'100%'}
-      overflow={'hidden'}>
-        <Stack ml={10}
+      overflow={'hidden'} px={{ base: '20px', lg: '40px' }}>
+        <Stack
           spacing={{ base: 8, md: 10 }}
           py={{ base: 20, md: 28 }}
           direction={{ base: 'column', md: 'row' }}>
@@ -138,7 +138,7 @@ export function SobreMim() {
           </Stack>
           <Center py={5}>
             <Box
-              mr={20}
+              mr={{ base: 0, md: '20px'  }}
               maxW={'600px'}
               w={'full'}
               bg={useColorModeValue('gray.50', 'gray.900')}

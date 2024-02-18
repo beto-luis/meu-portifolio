@@ -16,8 +16,8 @@ export function Habilidades() {
     <Container maxW={'8xl'} py={12} position={'relative'}>
       <SimpleGrid mt={'20'} columns={{ base: 1, md: 2 }} spacing={5}>
         <Stack spacing={4}>
-          <Heading color={useColorModeValue('gray.700', 'gray.200')} fontSize={{ base: "16px", md: "20px", lg: "35px" }}>Minhas habilidades e certificados</Heading>
-          <Text color={'gray.500'} fontSize={{ base: "12px", md: "16px", lg: "18px" }}>
+          <Heading color={useColorModeValue('gray.700', 'gray.200')} fontSize={{ base: "25px", lg: "35px" }}>Minhas habilidades e certificados</Heading>
+          <Text color={'gray.500'} fontSize={{ base: "16px", lg: "18px" }}>
             Eu estarei atualizando essa página de acordo com o progresso do meu conhecimento e conquistas!
             <br />
             Por hora aqui eu compartilho algumas das minhas realizações profissionais.
@@ -111,10 +111,10 @@ export function Habilidades() {
             alt='mensagem de inspiração'
             objectFit={'cover'}
           />
-          <Heading color={useColorModeValue('gray.700', 'gray.200')} my={'10'} fontSize={{ base: "16px", md: "20px", lg: "35px" }}>
+          <Heading color={useColorModeValue('gray.700', 'gray.200')} my={'10'} fontSize={{ base: "25px", lg: "35px" }}>
             Sobre este portifolio
           </Heading>
-          <Text color={'gray.500'} fontSize={{ base: "12px", md: "16px", lg: "18px" }} textAlign={'left'} mx={'5'}>
+          <Text color={'gray.500'} fontSize={{ base: "16px", lg: "18px" }} textAlign={'left'} mx={'5'}>
             Durante o meu período de estudo e imersão no mundo da tecnologia, desenvolvi com entusiasmo o meu portfólio como uma expressão real do conhecimento adquirido. O projeto foi moldado utilizando o framework Next.js e Chakra UI para estilização, duas tecnologias escolhidas deliberadamente para um desafio pessoal. Até então, não havia explorado ou utilizado nenhuma delas, e esta escolha foi uma maneira de testar minhas habilidades em aprender novas tecnologias.
             <br />
             A plataforma de hospedagem escolhida para os sites estáticos foi o GitHub Pages. No entanto, para o projeto do <Link target='_blank' href='https://main--fluffy-praline-f37cd8.netlify.app/' isExternal color={'green.400'}>
