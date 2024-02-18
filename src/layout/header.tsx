@@ -18,6 +18,8 @@ import { MoonIcon, SunIcon } from '@chakra-ui/icons'
 export function Header() {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const { colorMode, toggleColorMode } = useColorMode()
+    const bgcolor = useColorModeValue('gray.50', 'gray.900');
+    const color = useColorModeValue('blackAlpha.200', 'whiteAlpha.200');
     return (
         <>
             <Box h={20} w={{ base: '100%', }}
@@ -72,21 +74,21 @@ export function Header() {
                 </Flex>
 
                 {isOpen ? (
-                    <Box bg={useColorModeValue('gray.50', 'gray.900',)} pb={4} display={{ md: 'none' }}>
+                    <Box bg={bgcolor} pb={4} display={{ md: 'none' }}>
                         <Stack as={'nav'} spacing={4}>
                             <Flex maxW={'auto'} direction={'column'} alignSelf={'flex-end'} gap="5" >
                                 <Button as={'a'} _hover={{
-                                    bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+                                    bg: (color),
                                 }} variant='ghost' href='/'>
                                     Sobre mim
                                 </Button>
                                 <Button as={'a'} _hover={{
-                                    bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+                                    bg: (color),
                                 }} variant='ghost' href='/projetos'>
                                     Projetos
                                 </Button>
                                 <Button as={'a'} _hover={{
-                                    bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+                                    bg: (color),
                                 }} variant='ghost' href='/habilidades'>
                                     Habilidades
                                 </Button>
