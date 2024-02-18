@@ -41,23 +41,23 @@ export function Header() {
                     />
                     <HStack spacing={8} alignItems={'center'}>
                         <HStack direction={'column'} as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }}>
-                        <Flex gap="5" >
-                            <Button as={'a'} _hover={{
-                                bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
-                            }} variant='ghost' href='/'>
-                                Sobre mim
-                            </Button>
-                            <Button as={'a'} _hover={{
-                                bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
-                            }} variant='ghost' href='/projetos'>
-                                Projetos
-                            </Button>
-                            <Button as={'a'} _hover={{
-                                bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
-                            }} variant='ghost' href='/habilidades'>
-                                Habilidades
-                            </Button>
-                        </Flex>
+                            <Flex gap="5" >
+                                <Button as={'a'} _hover={{
+                                    bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+                                }} variant='ghost' href='/'>
+                                    Sobre mim
+                                </Button>
+                                <Button as={'a'} _hover={{
+                                    bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+                                }} variant='ghost' href='/projetos'>
+                                    Projetos
+                                </Button>
+                                <Button as={'a'} _hover={{
+                                    bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+                                }} variant='ghost' href='/habilidades'>
+                                    Habilidades
+                                </Button>
+                            </Flex>
                         </HStack>
                     </HStack>
                     <Flex alignItems={'center'} ml="5">
@@ -72,25 +72,25 @@ export function Header() {
                 </Flex>
 
                 {isOpen ? (
-                    <Box  bg={useColorModeValue('gray.50', 'gray.900',)} pb={4} display={{ md: 'none' }}>
+                    <Box bg={useColorModeValue('gray.50', 'gray.900',)} pb={4} display={{ md: 'none' }}>
                         <Stack as={'nav'} spacing={4}>
-                        <Flex maxW={'auto'} direction={'column'} alignSelf={'flex-end'} gap="5" >
-                            <Button as={'a'} _hover={{
-                                bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
-                            }} variant='ghost' href='/'>
-                                Sobre mim
-                            </Button>
-                            <Button as={'a'} _hover={{
-                                bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
-                            }} variant='ghost' href='/projetos'>
-                                Projetos
-                            </Button>
-                            <Button as={'a'} _hover={{
-                                bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
-                            }} variant='ghost' href='/habilidades'>
-                                Habilidades
-                            </Button>
-                        </Flex>
+                            <Flex maxW={'auto'} direction={'column'} alignSelf={'flex-end'} gap="5" >
+                                <Button as={'a'} _hover={{
+                                    bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+                                }} variant='ghost' href='/'>
+                                    Sobre mim
+                                </Button>
+                                <Button as={'a'} _hover={{
+                                    bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+                                }} variant='ghost' href='/projetos'>
+                                    Projetos
+                                </Button>
+                                <Button as={'a'} _hover={{
+                                    bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+                                }} variant='ghost' href='/habilidades'>
+                                    Habilidades
+                                </Button>
+                            </Flex>
                         </Stack>
                     </Box>
                 ) : null}
