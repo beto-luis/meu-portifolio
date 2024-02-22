@@ -22,10 +22,11 @@ export function Header() {
     const color = useColorModeValue('blackAlpha.200', 'whiteAlpha.200');
     return (
         <>
-            <Box h={20} w={{ base: '100%', }}
+            <Box h={20} 
+                w={{ base: '100%', }}
                 position={'fixed'}
                 zIndex="1"
-                bg={useColorModeValue('gray.50', 'gray.900',)}
+                bg={bgcolor}
                 color={useColorModeValue('gray.700', 'gray.200')}
                 px={4}>
                 <Flex maxW={'100%'} alignItems={'center'} justifyContent={'space-between'}>

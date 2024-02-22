@@ -39,9 +39,6 @@ export function Habilidades() {
               boxShadow={'lg'}
               rounded={'md'}
               overflow={'hidden'}>
-              <Link target='_blank' href='https://www.credly.com/badges/72072ba1-fea2-4316-a00f-f4b95adac625/public_url' >
-                <Image h={'100'} src='aws-knowledge-cloud-essentials.png' alt='Cloud essentials' />
-              </Link>
               <Link target='_blank' href='https://www.credly.com/badges/b4736eeb-3745-498a-a1be-25a21a8b84c8/public_url' >
                 <Image h={'100'} src='aws-certified-cloud-practitioner.png' alt='Cloud practitioner' />
               </Link>
@@ -50,6 +47,21 @@ export function Habilidades() {
               </Link>
               <Link target='_blank' href='https://www.credly.com/badges/25736ef7-2b6c-46db-826e-a30a452fb3a4/public_url' >
                 <Image h={'100'} src='aws-cloud-quest-solutions-architect.png' alt='Cloud solutions' />
+              </Link>
+            </Flex>
+            <Flex
+              p={'3'}
+              justify={'space-evenly'}
+              maxW={'auto'}
+              bg={useColorModeValue('gray.50', 'gray.900')}
+              color={useColorModeValue('gray.700', 'gray.200')}
+              boxShadow={'lg'}
+              rounded={'md'}
+              overflow={'hidden'}>
+              <Link target='_blank' href='https://www.credly.com/badges/72072ba1-fea2-4316-a00f-f4b95adac625/public_url' >
+                <Image h={'100'} src='aws-knowledge-cloud-essentials.png' alt='Cloud essentials' />
+              </Link><Link target='_blank' href='https://www.credly.com/badges/b16e1625-ca0c-4117-b477-06e5dba5ee47/public_url' >
+                <Image h={'100'} src='aws-knowledge-file-storage.png' alt='File storage' />
               </Link>
             </Flex>
             <Text mt={'10'} justifyContent={'center'} textAlign={'center'} fontWeight={'bold'} color={useColorModeValue('green.700', 'green.200')} fontSize={'lg'}>
