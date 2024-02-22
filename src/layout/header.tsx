@@ -46,17 +46,17 @@ export function Header() {
                         <HStack direction={'column'} as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }}>
                             <Flex gap="5" >
                                 <Button as={'a'} _hover={{
-                                    bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+                                    bg: (color),
                                 }} variant='ghost' href='/'>
                                     Sobre mim
                                 </Button>
                                 <Button as={'a'} _hover={{
-                                    bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+                                    bg: (color),
                                 }} variant='ghost' href='/projetos'>
                                     Projetos
                                 </Button>
                                 <Button as={'a'} _hover={{
-                                    bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+                                    bg: (color),
                                 }} variant='ghost' href='/habilidades'>
                                     Habilidades
                                 </Button>
@@ -66,7 +66,7 @@ export function Header() {
                     <Flex alignItems={'center'} ml="5">
                         <Stack direction={'row'} spacing={7}>
                             <Button _hover={{
-                                bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+                                bg: (color),
                             }} onClick={toggleColorMode}>
                                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
                             </Button>
