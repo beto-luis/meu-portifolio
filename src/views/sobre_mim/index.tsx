@@ -12,44 +12,45 @@ import {
   VisuallyHidden,
   chakra,
   Image,
-} from '@chakra-ui/react'
-import { ReactNode } from 'react'
-import { FaGithub, FaLinkedin, FaWhatsapp, } from 'react-icons/fa'
-import { Divider } from '@chakra-ui/react'
-import { AccordionContainer } from '@/components/AccordionContainer'
-import { AccordionItens } from '@/components/AccordionItens'
+} from "@chakra-ui/react";
+import { ReactNode } from "react";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { Divider } from "@chakra-ui/react";
+import { AccordionContainer } from "@/components/AccordionContainer";
+import { AccordionItens } from "@/components/AccordionItens";
 
 const SocialButton = ({
   children,
   label,
   href,
 }: {
-  children: ReactNode
-  label: string
-  href: string
+  children: ReactNode;
+  label: string;
+  href: string;
 }) => {
   return (
     <chakra.button
-      fontSize={'20'}
-      rounded={'full'}
+      fontSize={"20"}
+      rounded={"full"}
       w={8}
       h={8}
-      cursor={'pointer'}
-      as={'a'}
+      cursor={"pointer"}
+      as={"a"}
       href={href}
       target="_blank"
-      display={'inline-flex'}
-      alignItems={'center'}
-      justifyContent={'center'}
-      transition={'background 0.3s ease'}
+      display={"inline-flex"}
+      alignItems={"center"}
+      justifyContent={"center"}
+      transition={"background 0.3s ease"}
       _hover={{
-        bg: useColorModeValue('blackAlpha.300', 'green.300'),
-      }}>
+        bg: useColorModeValue("blackAlpha.300", "green.300"),
+      }}
+    >
       <VisuallyHidden>{label}</VisuallyHidden>
       {children}
     </chakra.button>
-  )
-}
+  );
+};
 
 export function SobreMim() {
   return (
@@ -196,8 +197,7 @@ export function SobreMim() {
         <Center py={5}>
           <Box
             mr={{ base: 0, md: "20px" }}
-            maxW={"600px"}
-            w={"full"}
+            maxW={"430px"}
             bg={useColorModeValue("gray.50", "gray.900")}
             boxShadow={"2x1"}
             rounded={"md"}
@@ -215,7 +215,7 @@ export function SobreMim() {
                 rounded={"full"}
                 size={"1"}
                 src={"Imagem_perfil_2.jpeg"}
-                maxW={"65%"}
+                w={"65%"}
                 css={{
                   border: "3px solid",
                 }}
@@ -234,12 +234,14 @@ export function SobreMim() {
                 </Heading>
                 <Divider w={"70%"} mt={"10"} mb={"10"} />
                 <Text
+                  w={"75%"}
                   align={"center"}
                   fontFamily={"poppins"}
-                  fontSize={"20"}
+                  fontSize={"16"}
                   color={"gray.500"}
                 >
-                  Desenvolvedor Júnior
+                  Desenvolvedor Júnior | Certificado AWS | Cloud Pratictioner |
+                  Futuro Arquiteto de Soluções | Apaixonado por Tecnologia.
                 </Text>
               </Stack>
 
