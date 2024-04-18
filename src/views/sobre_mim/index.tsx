@@ -234,10 +234,9 @@ export function SobreMim() {
                 </Heading>
                 <Divider w={"70%"} mt={"10"} mb={"10"} />
                 <Text
-                  w={"50%"}
                   align={"center"}
                   fontFamily={"poppins"}
-                  fontSize={"2x1"}
+                  fontSize={"20"}
                   color={"gray.500"}
                 >
                   Desenvolvedor Júnior
