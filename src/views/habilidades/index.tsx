@@ -60,8 +60,25 @@ export function Habilidades() {
               overflow={'hidden'}>
               <Link target='_blank' href='https://www.credly.com/badges/72072ba1-fea2-4316-a00f-f4b95adac625/public_url' >
                 <Image h={'100'} src='aws-knowledge-cloud-essentials.png' alt='Cloud essentials' />
-              </Link><Link target='_blank' href='https://www.credly.com/badges/b16e1625-ca0c-4117-b477-06e5dba5ee47/public_url' >
+              </Link>
+              <Link target='_blank' href='https://www.credly.com/badges/b16e1625-ca0c-4117-b477-06e5dba5ee47/public_url' >
                 <Image h={'100'} src='aws-knowledge-file-storage.png' alt='File storage' />
+              </Link>
+            </Flex>
+            <Flex
+              p={'3'}
+              justify={'space-evenly'}
+              maxW={'auto'}
+              bg={useColorModeValue('gray.50', 'gray.900')}
+              color={useColorModeValue('gray.700', 'gray.200')}
+              boxShadow={'lg'}
+              rounded={'md'}
+              overflow={'hidden'}>
+              <Link target='_blank' href='https://www.credly.com/badges/de30b333-8364-4ddf-b818-6e2a6625178f/public_url' >
+                <Image h={'100'} src='aws-educate-getting-started-with-compute.png' alt='Educate Compute' />
+              </Link>
+              <Link target='_blank' href='https://www.credly.com/badges/6fa7931e-4197-4201-9506-fd47b2038e9e/public_url' >
+                <Image h={'100'} src='aws-educate-getting-started-with-storage.png' alt='Educate Storage' />
               </Link>
             </Flex>
             <Text mt={'10'} justifyContent={'center'} textAlign={'center'} fontWeight={'bold'} color={useColorModeValue('green.700', 'green.200')} fontSize={'lg'}>
